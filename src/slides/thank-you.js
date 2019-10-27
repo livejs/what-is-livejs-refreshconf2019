@@ -31,11 +31,15 @@ export default (
     {notes}
 
     <A>
-      <Subtitle>Let's connect!</Subtitle>
+      <Fragment order={0}>
+        <Title>
+          ❤️ <RainbowText text="THANK YOU" /> ❤️
+        </Title>
+      </Fragment>
       <br />
       <br />
       <StyledList className="center">
-        <Fragment order={1}>
+        <Fragment order={0}>
           <li className="no-border">
             <ImportantLink href="https://twitter.com/LiveJS_network">
               twitter.com/LiveJS_network
@@ -43,13 +47,6 @@ export default (
           </li>
         </Fragment>
       </StyledList>
-      <br />
-      <br />
-      <Fragment order={5}>
-        <Title>
-          ❤️ <RainbowText text="THANK YOU" /> ❤️
-        </Title>
-      </Fragment>
     </A>
 
     {/* <B>

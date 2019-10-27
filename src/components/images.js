@@ -51,6 +51,16 @@ export const MediumImage = styled.img`
   height: 50vh;
 `
 
+export const LiveJSLogo = styled.span`
+  height: 50vh;
+
+  svg {
+    --color-gradient-start: #f00;
+    --color-gradient-stop: #00f;
+    --color-text: #000;
+  }
+`
+
 export const SmallImageRound = styled(SmallImage)`
   border-radius: 50%;
   border: 0.5em solid var(--theme-primary);

@@ -14,6 +14,28 @@ import LuminaveButton from './components/luminaveButton'
 
 const mySlides = [
   'cover',
+
+  'introduce-tim-and-jan',
+
+  'history-of-livejs',
+  'history-of-livejs-1',
+
+  'shows-around-the-world',
+  'technology-needed-to-run-a-show',
+  'music-by-jan',
+  'visuals-and-lights-by-tim',
+  'this-is-really-cool-but',
+  'co2-wasted-by-livejs-since-the-beginning',
+  'co2-per-person-year-in-groningen',
+  'do-you-want-to-party-after-a-long-day-of-talks',
+  'play-in-empty-rooms',
+  'what-can-we-do-about-this',
+  'we-as-livejs',
+  'what-is-jan-doing',
+  'what-is-tim-doing',
+  'what-can-you-do',
+  'art-is-giving-back-positive-energy-into-the-community',
+
   // 'warning-flashing-lights-music',
   // 'purpose-of-the-workshop',
   // 'schickmalzwo-jasmins-bday-bash-2019',
