@@ -30,6 +30,8 @@ import {
   StyledList,
   StyledOrderedListLarge
 } from '../components/list'
+import {OpenStreetMap} from '../components/openstreetmap'
+import './../styles/leaflet'
 
 const {Slide, A} = Main
 // const {Slide, A, B} = Half
@@ -57,6 +59,7 @@ const notes = (
         animationOut={flip.y} 
         animationIn={flip.y}
 */
+
 export default (
   <Slide key={uuid()}>
     {/*
@@ -66,7 +69,7 @@ export default (
     {notes}
 
     <A>
-      <Title>Shows around the World</Title>
+      <OpenStreetMap />
 
       {/*
       <ImportantLink href=""></ImportantLink>
