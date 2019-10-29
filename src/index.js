@@ -15,76 +15,60 @@ import LuminaveButton from './components/luminaveButton'
 const mySlides = [
   'cover',
 
-  'introduce-tim-and-jan',
+  'collective-of-digital-artists',
+  'livejs-crew',
 
   'history-of-livejs',
   'history-of-livejs-1',
 
   'shows-around-the-world',
-  'technology-needed-to-run-a-show',
+
+  'how-to-organise-a-show',
+  // Info graphic with 3 steps (before, during, after)
+  // technical rider
+  // before a gig
+  // organize using notion and email thread and slack
+  // during a gig / share airbnb together to reduce cost
+  // after a gig / resouces on GitHub / collect videos & images
+
+  'what-is-needed-to-run-a-show',
+  // At least visuals + music, lights are a nice to have
+
+  'jsconfeu-opening-2019',
+  // maybe some more pics of other conferences? to show how awesome this is?
+
   'music-by-jan',
+
   'visuals-and-lights-by-tim',
+  'modular-visualizations-with-modv',
+  'control-lights-with-luminave',
+  'dmx512',
+  'dmx512-universe-diagram',
+  'dmx512-fixture',
+  'dmx512-universe',
+  // dmx512 diagram to explain how this works
+  'dmx512-controller',
+  // 'arduino-leonardo',
+  'webusb-dmx512-controller',
+  'cyberpunk-googles',
+
   'this-is-really-cool-but',
   'co2-wasted-by-livejs-since-the-beginning',
   'co2-per-person-year-in-groningen',
   'do-you-want-to-party-after-a-long-day-of-talks',
   'play-in-empty-rooms',
+
   'what-can-we-do-about-this',
   'we-as-livejs',
+
   'what-is-jan-doing',
+
   'what-is-tim-doing',
+  'thorium-spaceship-simulator',
+
   'what-can-you-do',
+
   'art-is-giving-back-positive-energy-into-the-community',
-
-  // 'warning-flashing-lights-music',
-  // 'purpose-of-the-workshop',
-  // 'schickmalzwo-jasmins-bday-bash-2019',
-  // 'why-do-we-want-to-generate-visuals-and-control-lights',
-  // 'tim-pietrusky',
-  // 'deadmau5',
-  // 'jsconfeu-2014',
-  // 'livejs',
-  // 'schickmalzwo',
-  // 'what-about-you', // Attendees tell about what they do and what they want to get out of the workshop, if they have coding experience, any visuals & lights experience
-  // 'everything-in-the-browser',
-  // 'implications-of-open-source-software',
-  // 'schedule', // Feel free to go on the toilet, lunch, party
-  // 'preperations',
-
-  // 'modular-visualizations-with-modv',
-  // 'modv-exercises',
-
-  // // 'lunch',
-
-  // 'control-lights-with-luminave',
-
-  // 'dmx512',
-  // 'dmx512-fixture',
-  // 'dmx512-universe',
-  // 'dmx512-controller',
-  // 'arduino-leonardo',
-  // 'webusb-dmx512-controller',
-
-  // 'luminave-exercises',
-
-  // 'connect-modv-and-luminave-with-each-other',
-
-  // 'how-to-perform-live',
-  // // 'jsconfeu-opening-2019',
-  // 'checklist',
-  // // 'midi-controller',
-
-  // // 'audio-interface',
-  // // 'usb-hub',
-  // // 'laptop-stand',
-  // // 'cyberpunk-googles',
-  // // 'import-tims-preset-into-your-modv',
-  // 'use-tims-setup',
-  // // 'have-fun',
-
-  // 'dinner',
-
-  // 'party',
 
   'thank-you'
 

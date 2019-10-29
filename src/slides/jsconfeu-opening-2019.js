@@ -12,7 +12,8 @@ import {
   TextMarker,
   Code2,
   YouTube,
-  SuperVideo
+  SuperVideo,
+  StyledFooter
 } from '../components'
 import {css} from 'styled-components'
 import {Grid, Half, HalfVertical} from '../masters'
@@ -51,7 +52,23 @@ export default (
     {notes}
 
     <A>
-      <Title>JSConf EU Opening 2019</Title>
+      <Sequence order={1} steps={2} time={-1}>
+        {(index, time, timeline) => {
+          return (
+            <SuperVideo
+              src="media/JSConfEU_2019_LiveJS_Intro.mp4"
+              isPlaying={index === 0}
+              style={{width: '100%'}}
+            />
+          )
+        }}
+      </Sequence>
+
+      <StyledFooter>
+        <ImportantLink href="https://www.youtube.com/watch?v=o1rzsna263c&t=1222">
+          youtube.com/watch?v=o1rzsna263c&t=1222
+        </ImportantLink>
+      </StyledFooter>
 
       {/*
       <ImportantLink href=""></ImportantLink>

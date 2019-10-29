@@ -66,7 +66,9 @@ export default (
     {notes}
 
     <A>
-      <Title>What is Jan doing?</Title>
+      <Title>
+        What is <RainbowText text="Jan"></RainbowText> doing?
+      </Title>
 
       {/*
       <ImportantLink href=""></ImportantLink>

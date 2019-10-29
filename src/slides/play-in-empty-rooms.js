@@ -58,7 +58,10 @@ const notes = (
         animationIn={flip.y}
 */
 export default (
-  <Slide key={uuid()}>
+  <Slide
+    key={uuid()}
+    background={`url("media/JSConfBP_2019_LIveJS_show.jpg")`}
+    mixin="--slide-color: white">
     {/*
         luminave={['green']}
       */}
@@ -66,7 +69,7 @@ export default (
     {notes}
 
     <A>
-      <Title>Play in empty rooms</Title>
+      {/* <Title>Play in empty rooms</Title> */}
 
       {/*
       <ImportantLink href=""></ImportantLink>

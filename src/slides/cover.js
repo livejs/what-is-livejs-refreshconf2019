@@ -11,10 +11,10 @@ import {RainbowText} from '../components'
 import {css} from 'styled-components'
 import {Grid, Half, HalfVertical} from '../masters'
 import {ImportantLink} from '../components/links'
-import {topCenter, LargeImage, LiveJSLogo} from '../components/images'
+import {topCenter, LargeImage, LivejsLogo} from '../components/images'
 import {fade, flip, cube} from '@dekk/animation'
 
-const {Slide, A, B} = Half
+const {Slide, A} = Main
 
 const notes = (
   <Notes>
@@ -23,20 +23,14 @@ const notes = (
   </Notes>
 )
 
-import ReactSVG from 'react-svg'
-
 export default (
-  <Slide key={uuid()}>
+  <Slide key={uuid()} background="#000" mixin="--slide-color: white">
     <Plugins.Data luminave={['']} />
     {notes}
     <A>
-      <Title>&nbsp;&nbsp;What is</Title>
+      <Title>
+        What is<LivejsLogo></LivejsLogo>?
+      </Title>
     </A>
-
-    <B>
-      <LiveJSLogo>
-        <ReactSVG src="media/live-js-logo.svg" />
-      </LiveJSLogo>
-    </B>
   </Slide>
 )

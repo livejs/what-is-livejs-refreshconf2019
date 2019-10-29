@@ -8,9 +8,10 @@ import L from 'leaflet'
 import {leaflet} from './../styles/leaflet'
 
 const iconPerson = new L.Icon({
-  iconUrl: 'media/marker-icon.png',
+  iconUrl: 'media/marker-icon-black.png',
   iconSize: [25, 41],
   iconAnchor: [12, 41],
+  popupAnchor: [1, -30],
   shadowUrl: null,
   shadowSize: null,
   shadowAnchor: null
@@ -77,6 +78,11 @@ export default class CustomComponent extends Component {
         key: 'Milan',
         position: [45.464664, 9.18854],
         content: 'Codemotion'
+      },
+      {
+        key: 'Melborne',
+        position: [-37.813629, 144.963058],
+        content: 'JSConf AU'
       },
       {
         key: 'Groningen',

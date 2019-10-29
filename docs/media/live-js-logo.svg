@@ -5,7 +5,7 @@
     path { fill: var(--color-text, white); }
     
     .gradient > path {
-      fill: url('#gradient-1') #fff;
+      fill: url('#gradient') #fff;
     }
   </style>
   

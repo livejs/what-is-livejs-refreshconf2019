@@ -13,7 +13,9 @@ import {
   Code2,
   YouTube,
   SuperVideo,
-  StyledFooter
+  StyledFooter,
+  Columns,
+  ColumnCaption
 } from '../components'
 import {css} from 'styled-components'
 import {Grid, Half, HalfVertical} from '../masters'
@@ -31,7 +33,7 @@ import {
   StyledOrderedListLarge
 } from '../components/list'
 
-const {Slide, A} = Main
+const {Slide, A, B} = HalfVertical
 // const {Slide, A, B} = Half
 
 const notes = (
@@ -66,7 +68,9 @@ export default (
     {notes}
 
     <A>
-      <Title>What is Tim doing?</Title>
+      <Title>
+        What is <RainbowText text="Tim"></RainbowText> doing?
+      </Title>
 
       {/*
       <ImportantLink href=""></ImportantLink>
@@ -201,8 +205,28 @@ export default (
           </Code2> */}
     </A>
 
-    {/* <B>
-     <Title>Making of</Title>
-    </B> */}
+    <B>
+      <Columns amount="2">
+        <Fragment order={1}>
+          <div>
+            <Subtitle>
+              Run the lights in <TextMarker>starship simulators</TextMarker> for
+              schools in the US
+            </Subtitle>
+          </div>
+        </Fragment>
+
+        <div>
+          <Fragment order={2}>
+            <SmallImage src="media/thorium.svg" alt="Thorium logo" />
+
+            <br />
+            <ImportantLink src="https://thoriumsim.com/">
+              thoriumsim.com
+            </ImportantLink>
+          </Fragment>
+        </div>
+      </Columns>
+    </B>
   </Slide>
 )

@@ -1,6 +1,7 @@
 import React from 'react'
 import styled, {css} from 'styled-components'
 import {default as MaskedImage, FitImage} from '@dekk/image'
+import ReactSVG from 'react-svg'
 
 export const smallSquare = css`
   --width: 300px;
@@ -51,13 +52,14 @@ export const MediumImage = styled.img`
   height: 50vh;
 `
 
-export const LiveJSLogo = styled.span`
+export const StyledLivejsLogo = styled.span`
   height: 50vh;
+  vertical-align: middle;
 
   svg {
-    --color-gradient-start: #f00;
-    --color-gradient-stop: #00f;
-    --color-text: #000;
+    --color-gradient-start: ${({colorGradientStart}) => colorGradientStart};
+    --color-gradient-stop: ${({colorGradientStop}) => colorGradientStop};
+    --color-text: ${({colorText}) => colorText};
   }
 `
 
@@ -75,3 +77,17 @@ export const ZoomOut80 = styled(MaskedImage)`
   ${zoomOut80}
   ${noRepeat}
 `
+
+export const LivejsLogo = props => {
+  const {value, label} = props
+
+  return (
+    <StyledLivejsLogo {...props}>
+      <ReactSVG
+        src="media/live-js-logo.svg"
+        renumerateIRIElements={false}
+        wrapper="span"
+      />
+    </StyledLivejsLogo>
+  )
+}

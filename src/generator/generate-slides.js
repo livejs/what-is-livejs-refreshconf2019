@@ -10,23 +10,23 @@ var template = fs.readFileSync('./src/generator/template.js', 'utf8')
 const force = false
 
 const mySlides = [
-  {title: 'Introduce Tim & Jan'},
-  {title: 'History of LiveJS'},
-  {title: 'Shows around the World'},
-  {title: 'Technology needed to run a show'},
-  {title: 'Music by Jan'},
-  {title: 'Visuals & Lights by Tim'},
-  {title: 'This is really cool, but'},
-  {title: 'CO2 wasted by LiveJS since the beginning'},
-  {title: 'CO2 per person / year in Groningen'},
-  {title: 'Do you want to party after a long day of talks?'},
-  {title: 'Play in empty rooms'},
-  {title: 'What can we do about this?'},
-  {title: 'We as LiveJS'},
-  {title: 'What is Jan doing?'},
-  {title: 'What is Tim doing?'},
-  {title: 'What can you do?'},
-  {title: 'Art is giving back positive energy into the community'}
+  // {title: 'Introduce Tim & Jan'},
+  // {title: 'History of LiveJS'},
+  // {title: 'Shows around the World'},
+  // {title: 'Technology needed to run a show'},
+  // {title: 'Music by Jan'},
+  // {title: 'Visuals & Lights by Tim'},
+  // {title: 'This is really cool, but'},
+  // {title: 'CO2 wasted by LiveJS since the beginning'},
+  // {title: 'CO2 per person / year in Groningen'},
+  // {title: 'Do you want to party after a long day of talks?'},
+  // {title: 'Play in empty rooms'},
+  // {title: 'What can we do about this?'},
+  // {title: 'We as LiveJS'},
+  // {title: 'What is Jan doing?'},
+  // {title: 'What is Tim doing?'},
+  // {title: 'What can you do?'},
+  // {title: 'Art is giving back positive energy into the community'}
 ]
 
 const fileExists = path => file => fs.existsSync(`${path}/${file}`)

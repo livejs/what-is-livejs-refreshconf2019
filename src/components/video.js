@@ -46,6 +46,7 @@ export class SuperVideo extends Component {
             id="video"
             src={this.props.src}
             preload="auto"
+            style={this.props.style}
           />
         </Default>
 
@@ -55,6 +56,7 @@ export class SuperVideo extends Component {
             id="video"
             src={this.props.src}
             preload="auto"
+            style={this.props.style}
           />
         </Live>
       </React.Fragment>

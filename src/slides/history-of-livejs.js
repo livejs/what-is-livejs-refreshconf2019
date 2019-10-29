@@ -22,7 +22,8 @@ import {
   topCenter,
   LargeImage,
   MediumImage,
-  SmallImage
+  SmallImage,
+  LivejsLogo
 } from '../components/images'
 import {fade, flip, cube} from '@dekk/animation'
 import {
@@ -66,7 +67,9 @@ export default (
     {notes}
 
     <A>
-      <Title>History of LiveJS</Title>
+      <Title>
+        History of<LivejsLogo colorText="#000"></LivejsLogo>
+      </Title>
 
       {/*
       <ImportantLink href=""></ImportantLink>
