@@ -16,7 +16,12 @@ import {
   StyledFooter
 } from '../components'
 import {css} from 'styled-components'
-import {Grid, Half, HalfVertical} from '../masters'
+import {
+  Grid,
+  Half,
+  HalfVertical,
+  HalfVerticalTopSmallBottomBig
+} from '../masters'
 import {ImportantLink} from '../components/links'
 import {
   topCenter,
@@ -33,13 +38,13 @@ import {
 import {Columns, ColumnCaption} from '../components/grid'
 
 // const {Slide, A} = Main
-const {Slide, A, B} = HalfVertical
+const {Slide, A, B} = HalfVerticalTopSmallBottomBig
 
 const notes = (
   <Notes>
     <h3>Ruth John</h3>
     <ul>
-      <li>Does visuals as rumyra using her own software Vizra</li>
+      <li>At LiveJS she does visuals as rumyra using her own software Vizra</li>
       <li>Runs the Generative Art Podcast together with Tim Holman</li>
       <li>
         Writes documentation and demos for MDN for topics such as the Web Audio
@@ -70,7 +75,7 @@ export default (
           <StyledList>
             <Fragment order={2}>
               <li>
-                Visuals with{' '}
+                Visuals as rumyra with{' '}
                 <ImportantLink href="https://github.com/livejs/VizraVid">
                   Vizra
                 </ImportantLink>

@@ -13,11 +13,15 @@ import {
   Code2,
   YouTube,
   SuperVideo,
-  Columns,
-  ColumnCaption
+  StyledFooter
 } from '../components'
 import {css} from 'styled-components'
-import {Grid, Half, HalfVertical} from '../masters'
+import {
+  Grid,
+  Half,
+  HalfVertical,
+  HalfVerticalTopSmallBottomBig
+} from '../masters'
 import {ImportantLink} from '../components/links'
 import {
   topCenter,
@@ -26,35 +30,30 @@ import {
   SmallImage
 } from '../components/images'
 import {fade, flip, cube} from '@dekk/animation'
-import {StyledListLarge, StyledList} from '../components/list'
+import {
+  StyledListLarge,
+  StyledList,
+  StyledOrderedListLarge
+} from '../components/list'
+import {Columns, ColumnCaption} from '../components/grid'
 
 // const {Slide, A} = Main
-const {Slide, A, B} = HalfVertical
+const {Slide, A, B} = HalfVerticalTopSmallBottomBig
 
 const notes = (
   <Notes>
+    <h3>Ruth John</h3>
     <ul>
-      <li>This is how I look like when you find me online</li>
+      <li>At LiveJS she does visuals as rumyra using her own software Vizra</li>
+      <li>Runs the Generative Art Podcast together with Tim Holman</li>
       <li>
-        I co-founded a company named Synoa 6 years ago and work there as the CTO
-      </li>
-      <li>
-        Before all of that the only thing I did full-time was going to partys
-        and festivals, because I had no idea what I should do with my life and I
-        had many personal problems that I couldn't solve. And this was the only
-        escape for me.
+        Writes documentation and demos for MDN for topics such as the Web Audio
+        API
       </li>
     </ul>
   </Notes>
 )
 
-/*
-        background={`url("media/dmx512_universe.jpg")`}
-        background="#fff"
-        mixin="--slide-color: black" 
-        animationOut={flip.y} 
-        animationIn={flip.y}
-*/
 export default (
   <Slide key={uuid()}>
     {/*
@@ -65,22 +64,60 @@ export default (
 
     <A>
       <Title>Tim Pietrusky</Title>
+    </A>
 
-      {/*
+    <B>
+      <Columns amount="2">
+        <div>
+          <FitImage src="media/tim_pietrusky.jpg" alt=""></FitImage>
+        </div>
+        <div>
+          <StyledList>
+            <Fragment order={2}>
+              <li>
+                Visuals with{' '}
+                <ImportantLink href="https://modv.js.org">modV</ImportantLink> &
+                Lights with{' '}
+                <ImportantLink href="https://github.com/NERDDISCO/luminave">
+                  luminave
+                </ImportantLink>{' '}
+                as NERDDISCO
+              </li>
+            </Fragment>
+            <Fragment order={3}>
+              <li>LEDs</li>
+            </Fragment>
+            <Fragment order={4}>
+              <li>
+                Writer for{'  '}
+                <ImportantLink href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Using_Web_Audio_API">
+                  MDN
+                </ImportantLink>
+              </li>
+            </Fragment>
+            <Fragment order={5}>
+              <li class="no-border"></li>
+            </Fragment>
+          </StyledList>
+        </div>
+      </Columns>
+    </B>
+
+    {/*
       <ImportantLink href=""></ImportantLink>
       */}
 
-      {/*
+    {/*
       <Title>
         <TextMarker>this.stage</TextMarker>
       </Title>
       */}
 
-      {/* 
+    {/* 
         <Subtitle></Subtitle> 
       */}
 
-      {/*
+    {/*
       <StyledList>
         <Fragment order={2}>
           <li></li>
@@ -97,18 +134,47 @@ export default (
       </StyledList> 
       */}
 
-      {/* 
+    {/* 
+      <StyledListLarge>
+        <Fragment order={0}>
+          <li class="no-border">
+            Title
+            <StyledList>
+              <Fragment order={2}>
+                <li class="light-border space-top"></li>
+              </Fragment>
+              <Fragment order={3}>
+                <li class="light-border">
+                </li>
+              </Fragment>
+              <Fragment order={4}>
+                <li class="light-border"></li>
+              </Fragment>
+              <Fragment order={5}>
+                <li class="light-border">
+                </li>
+              </Fragment>
+              <Fragment order={6}>
+                <li class="no-border"></li>
+              </Fragment>
+            </StyledList>
+          </li>
+        </Fragment>
+      </StyledListLarge>
+       */}
+
+    {/* 
       <LargeImage 
           src="media/"
           alt=""
       />
       */}
 
-      {/* 
+    {/* 
         <FitImage src="media/" alt="" /> 
       */}
 
-      {/* 
+    {/* 
       <Sequence order={1} steps={2} time={-1}>
         {(index, time, timeline) => {
           return <SuperVideo 
@@ -121,7 +187,7 @@ export default (
       </Sequence>
       */}
 
-      {/*
+    {/*
        <YouTube videoId="GiTkwz9AKhM" start={93}>
         {props => {
           return (
@@ -137,7 +203,7 @@ export default (
       </YouTube>
       */}
 
-      {/*
+    {/*
       <DmxChannels channels="6" width="90%" height="10em">
         <Channel background="" label="Red" value="0" className="inactive">
         </Channel>
@@ -158,31 +224,15 @@ export default (
         </Channel>
       </DmxChannels>
     */}
-    </A>
 
-    <B>
-      <Columns amount="3">
-        <div>
-          <Fragment order={1} fit>
-            <ColumnCaption>2019</ColumnCaption>
-            <FitImage src="media/tim_avatar_real.jpg" alt="" />
-          </Fragment>
-        </div>
+    {/* <StyledFooter>
+        <ImportantLink href="https://www.youtube.com/watch?v=RsqeSfyhzdw">
+          youtube.com/watch?v=RsqeSfyhzdw
+        </ImportantLink>
+      </StyledFooter> */}
 
-        <div>
-          <Fragment order={2} fit>
-            <ColumnCaption>2013</ColumnCaption>
-            <FitImage src="media/synoa-shield.jpg" alt="" />
-          </Fragment>
-        </div>
-
-        <div>
-          <Fragment order={3} fit>
-            <ColumnCaption>2005 – 2010</ColumnCaption>
-            <FitImage src="media/party-hard.gif" alt="" />
-          </Fragment>
-        </div>
-      </Columns>
-    </B>
+    {/* <Code2 ranges={ranges} options={codeOptions}>
+            {code}
+          </Code2> */}
   </Slide>
 )

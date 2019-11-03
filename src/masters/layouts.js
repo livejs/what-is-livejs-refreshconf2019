@@ -132,7 +132,7 @@ layouts.AB.topBottom = css`
 layouts.AB.topSmallBottomBig = css`
   ${layouts.base};
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: 2fr 4fr;
   grid-template-areas:
     'slotA'
     'slotB';
