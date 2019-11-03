@@ -16,14 +16,35 @@ const mySlides = [
   'cover',
 
   'collective-of-digital-artists',
-  'livejs-crew',
+  'livejs-name-explained',
 
+  // talk about each of us individually to talk about the history?
   'history-of-livejs',
-  'history-of-livejs-1',
+  // maybe show pics of the different events that are mentioned?
+  // 'history-of-livejs-1',
 
-  'shows-around-the-world',
+  // TODO: Add content about each person
+  // 'livejs-crew',
+  'ruth-john',
+  'tim-pietrusky',
+  'martin-schuhfuss',
+  'matt-mckegg',
+  'sam-wray',
+  'jan-krutisch',
+
+  'livejs-manifesto',
 
   'how-to-organise-a-show',
+  'single-source-of-truth',
+  // 3 phases
+  // start conversation about a gig, what can we offer and what do they want?
+  // at least 2 people from LiveJS to run a show
+  // technical requirements
+  //
+  // Single source of truth
+  //   all conversation is handled by a livejs volunteer for the event
+  //   on-sight conversations with the stuff with one peson so that everyone else can concentrate on their stuff
+
   // Info graphic with 3 steps (before, during, after)
   // technical rider
   // before a gig
@@ -31,17 +52,31 @@ const mySlides = [
   // during a gig / share airbnb together to reduce cost
   // after a gig / resouces on GitHub / collect videos & images
 
+  // non-profit for non-profit events
+  // profit for profit events
+
   'what-is-needed-to-run-a-show',
   // At least visuals + music, lights are a nice to have
 
+  'shows-around-the-world',
   'jsconfeu-opening-2019',
-  // maybe some more pics of other conferences? to show how awesome this is?
+  'jsconf-asia-2019',
+  'jsconf-budapest-2019',
+  'refreshconf-lunch-show-explained',
 
-  'music-by-jan',
+  'jans-current-stack',
+  'improjam',
 
-  'visuals-and-lights-by-tim',
-  'modular-visualizations-with-modv',
-  'control-lights-with-luminave',
+  'tims-current-stack',
+  // maybe a diagram to explain what I'm using? And then a live demo?
+
+  // Describe the current stack of jan and tim and don't go into what
+  // they have created as this is covered
+  // in the details about each crew member
+
+  // 'modular-visualizations-with-modv',
+  // 'control-lights-with-luminave',
+
   'dmx512',
   'dmx512-universe-diagram',
   'dmx512-fixture',
@@ -50,18 +85,29 @@ const mySlides = [
   'dmx512-controller',
   // 'arduino-leonardo',
   'webusb-dmx512-controller',
-  'cyberpunk-googles',
+  'cyberpunk-goggles',
+  // maybe a diagram?
 
   'this-is-really-cool-but',
   'co2-wasted-by-livejs-since-the-beginning',
   'co2-per-person-year-in-groningen',
+
+  // show me your hands!
   'do-you-want-to-party-after-a-long-day-of-talks',
   'play-in-empty-rooms',
 
   'what-can-we-do-about-this',
   'we-as-livejs',
+  /*
+ Empower local communities to do shows themselves by doing workshops
+Call for artists at Conferences
+Give talks to empower creativity and to give context
+Online community on Slack
+
+  */
 
   'what-is-jan-doing',
+  'extinction-rebellion',
 
   'what-is-tim-doing',
   'thorium-spaceship-simulator',
@@ -69,13 +115,12 @@ const mySlides = [
   'what-can-you-do',
 
   'art-is-giving-back-positive-energy-into-the-community',
+  // It’s not about that we can do music and control lights live to perform on stage,
+  // but how we can do it, the technology behind it, the context so
+  // that you can do this too, to show the possibility, to extend your horizons
 
   'thank-you'
-
-  // 'setup-lights-for-party'
 ]
-
-//   'image-modv-module', // https://github.com/vcync/modV/issues/329#issuecomment-468449142
 
 const {present, live} = search.parse(window.location.href)
 

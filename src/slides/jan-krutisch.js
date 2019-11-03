@@ -30,6 +30,7 @@ import {
   StyledList,
   StyledOrderedListLarge
 } from '../components/list'
+import {Columns, ColumnCaption} from '../components/grid'
 
 const {Slide, A} = Main
 // const {Slide, A, B} = Half
@@ -66,7 +67,7 @@ export default (
     {notes}
 
     <A>
-      <Title>Introduce Tim &amp; Jan</Title>
+      <Title>Jan Krutisch</Title>
 
       {/*
       <ImportantLink href=""></ImportantLink>

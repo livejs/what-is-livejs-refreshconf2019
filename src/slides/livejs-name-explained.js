@@ -22,7 +22,8 @@ import {
   topCenter,
   LargeImage,
   MediumImage,
-  SmallImage
+  SmallImage,
+  LivejsLogo
 } from '../components/images'
 import {fade, flip, cube} from '@dekk/animation'
 import {
@@ -32,24 +33,21 @@ import {
 } from '../components/list'
 import {Columns, ColumnCaption} from '../components/grid'
 
-const {Slide, A} = Main
-// const {Slide, A, B} = Half
+// const {Slide, A} = Main
+const {Slide, A, B} = HalfVertical
 
 const notes = (
   <Notes>
-    <p />
+    <h3>Name explained</h3>
+    <ul>
+      <li>We peform Live, no playback</li>
+      <li>
+        We use JavaScript & the web to create our own open-source software to do
+        live shows
+      </li>
+    </ul>
   </Notes>
 )
-
-// const code = `npm start`
-
-// const ranges = []
-
-// const codeOptions = {
-//   lineNumbers: false,
-//   mode: 'bash',
-//   theme: 'dracula'
-// }
 
 /*
         background={`url("media/dmx512_universe.jpg")`}
@@ -60,30 +58,53 @@ const notes = (
 */
 export default (
   <Slide key={uuid()}>
-    {/*
-        luminave={['green']}
-      */}
     <Plugins.Data luminave={['']} />
     {notes}
 
     <A>
-      <Title />
+      <Subtitle>
+        What does<LivejsLogo colorText="#000" height="40vh"></LivejsLogo>
+        mean?&nbsp;&nbsp;&nbsp;&nbsp;
+      </Subtitle>
+    </A>
 
-      {/*
+    <B>
+      <br />
+      <br />
+      <Columns amount="2" className="outer-gap">
+        <div>
+          <Fragment order={1}>
+            <ColumnCaption className="right">
+              <Subtitle>live</Subtitle>
+              We perform live, no playback
+            </ColumnCaption>
+          </Fragment>
+        </div>
+        <div>
+          <Fragment order={2}>
+            <ColumnCaption>
+              <Subtitle>js</Subtitle>We use JavaScript & the web
+            </ColumnCaption>
+          </Fragment>
+        </div>
+      </Columns>
+    </B>
+
+    {/*
       <ImportantLink href=""></ImportantLink>
       */}
 
-      {/*
+    {/*
       <Title>
         <TextMarker>this.stage</TextMarker>
       </Title>
       */}
 
-      {/* 
+    {/* 
         <Subtitle></Subtitle> 
       */}
 
-      {/*
+    {/*
       <StyledList>
         <Fragment order={2}>
           <li></li>
@@ -100,7 +121,7 @@ export default (
       </StyledList> 
       */}
 
-      {/* 
+    {/* 
       <StyledListLarge>
         <Fragment order={0}>
           <li class="no-border">
@@ -129,18 +150,18 @@ export default (
       </StyledListLarge>
        */}
 
-      {/* 
+    {/* 
       <LargeImage 
           src="media/"
           alt=""
       />
       */}
 
-      {/* 
+    {/* 
         <FitImage src="media/" alt="" /> 
       */}
 
-      {/* 
+    {/* 
       <Sequence order={1} steps={2} time={-1}>
         {(index, time, timeline) => {
           return <SuperVideo 
@@ -153,7 +174,7 @@ export default (
       </Sequence>
       */}
 
-      {/*
+    {/*
        <YouTube videoId="GiTkwz9AKhM" start={93}>
         {props => {
           return (
@@ -169,7 +190,7 @@ export default (
       </YouTube>
       */}
 
-      {/*
+    {/*
       <DmxChannels channels="6" width="90%" height="10em">
         <Channel background="" label="Red" value="0" className="inactive">
         </Channel>
@@ -191,16 +212,15 @@ export default (
       </DmxChannels>
     */}
 
-      {/* <StyledFooter>
+    {/* <StyledFooter>
         <ImportantLink href="https://www.youtube.com/watch?v=RsqeSfyhzdw">
           youtube.com/watch?v=RsqeSfyhzdw
         </ImportantLink>
       </StyledFooter> */}
 
-      {/* <Code2 ranges={ranges} options={codeOptions}>
+    {/* <Code2 ranges={ranges} options={codeOptions}>
             {code}
           </Code2> */}
-    </A>
 
     {/* <B>
      <Title>Making of</Title>

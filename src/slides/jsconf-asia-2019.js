@@ -66,7 +66,7 @@ export default (
     {notes}
 
     <A>
-      <Title>Music by Jan</Title>
+      <Title>JSConf Asia 2019</Title>
 
       {/*
       <ImportantLink href=""></ImportantLink>

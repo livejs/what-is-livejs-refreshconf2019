@@ -30,7 +30,6 @@ import {
   StyledList,
   StyledOrderedListLarge
 } from '../components/list'
-import {Columns, ColumnCaption} from '../components/grid'
 
 const {Slide, A} = Main
 // const {Slide, A, B} = Half
@@ -67,7 +66,7 @@ export default (
     {notes}
 
     <A>
-      <Title />
+      <Title>JSConf Budapest 2019</Title>
 
       {/*
       <ImportantLink href=""></ImportantLink>

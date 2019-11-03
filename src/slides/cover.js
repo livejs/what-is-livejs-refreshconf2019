@@ -18,7 +18,7 @@ const {Slide, A} = Main
 
 const notes = (
   <Notes>
-    <h3 />
+    <h3>Jan</h3>
     <p />
   </Notes>
 )

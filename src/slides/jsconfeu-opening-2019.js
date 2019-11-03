@@ -44,7 +44,7 @@ const notes = (
         animationIn={flip.y}
 */
 export default (
-  <Slide key={uuid()}>
+  <Slide key={uuid()} background="#000">
     {/*
         luminave={['green']}
       */}

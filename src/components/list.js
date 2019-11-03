@@ -4,8 +4,8 @@ import styled, {css} from 'styled-components'
 export const StyledList = styled.ul`
   list-style: none;
   text-align: left;
-  font-size: 4.5rem;
-  padding-right: 0.25em;
+  font-size: 3.5rem;
+  padding: 0;
   margin: 0 0 0 0;
   width: 100%;
 
@@ -20,11 +20,11 @@ export const StyledList = styled.ul`
     position: relative;
     text-align: left;
     display: inline-block;
-    margin: 0.25em 1.5em 0.25em 0;
+    margin: 0.25em 0 0.25em 0;
     padding-bottom: 0.1em;
-    padding-right: 0.5em;
+    /* padding-right: 0.5em; */
     width: 100%;
-    border-bottom: 1px solid var(--theme-primary-dark);
+    /* border-bottom: 1px solid var(--theme-primary-dark); */
 
     &:before {
       content: '';

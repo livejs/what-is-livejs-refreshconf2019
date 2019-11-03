@@ -66,7 +66,7 @@ export default (
     {notes}
 
     <A>
-      <Title>Visuals &amp; Lights by Tim</Title>
+      <Title>Jans current stack</Title>
 
       {/*
       <ImportantLink href=""></ImportantLink>

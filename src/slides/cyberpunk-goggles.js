@@ -12,8 +12,7 @@ import {
   TextMarker,
   Code2,
   YouTube,
-  SuperVideo,
-  StyledFooter
+  SuperVideo
 } from '../components'
 import {css} from 'styled-components'
 import {Grid, Half, HalfVertical} from '../masters'
@@ -25,12 +24,7 @@ import {
   SmallImage
 } from '../components/images'
 import {fade, flip, cube} from '@dekk/animation'
-import {
-  StyledListLarge,
-  StyledList,
-  StyledOrderedListLarge
-} from '../components/list'
-import {Columns, ColumnCaption} from '../components/grid'
+import {StyledListLarge, StyledList} from '../components/list'
 
 const {Slide, A} = Main
 // const {Slide, A, B} = Half
@@ -40,16 +34,6 @@ const notes = (
     <p />
   </Notes>
 )
-
-// const code = `npm start`
-
-// const ranges = []
-
-// const codeOptions = {
-//   lineNumbers: false,
-//   mode: 'bash',
-//   theme: 'dracula'
-// }
 
 /*
         background={`url("media/dmx512_universe.jpg")`}
@@ -67,7 +51,7 @@ export default (
     {notes}
 
     <A>
-      <Title />
+      <Title>Cyberpunk Goggles</Title>
 
       {/*
       <ImportantLink href=""></ImportantLink>
@@ -99,35 +83,6 @@ export default (
         </Fragment>
       </StyledList> 
       */}
-
-      {/* 
-      <StyledListLarge>
-        <Fragment order={0}>
-          <li class="no-border">
-            Title
-            <StyledList>
-              <Fragment order={2}>
-                <li class="light-border space-top"></li>
-              </Fragment>
-              <Fragment order={3}>
-                <li class="light-border">
-                </li>
-              </Fragment>
-              <Fragment order={4}>
-                <li class="light-border"></li>
-              </Fragment>
-              <Fragment order={5}>
-                <li class="light-border">
-                </li>
-              </Fragment>
-              <Fragment order={6}>
-                <li class="no-border"></li>
-              </Fragment>
-            </StyledList>
-          </li>
-        </Fragment>
-      </StyledListLarge>
-       */}
 
       {/* 
       <LargeImage 
@@ -190,16 +145,6 @@ export default (
         </Channel>
       </DmxChannels>
     */}
-
-      {/* <StyledFooter>
-        <ImportantLink href="https://www.youtube.com/watch?v=RsqeSfyhzdw">
-          youtube.com/watch?v=RsqeSfyhzdw
-        </ImportantLink>
-      </StyledFooter> */}
-
-      {/* <Code2 ranges={ranges} options={codeOptions}>
-            {code}
-          </Code2> */}
     </A>
 
     {/* <B>

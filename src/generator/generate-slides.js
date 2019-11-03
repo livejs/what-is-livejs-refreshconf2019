@@ -9,24 +9,26 @@ var template = fs.readFileSync('./src/generator/template.js', 'utf8')
 // Overwrite generated files
 const force = false
 
+// { title: ''},
+
 const mySlides = [
-  // {title: 'Introduce Tim & Jan'},
-  // {title: 'History of LiveJS'},
-  // {title: 'Shows around the World'},
-  // {title: 'Technology needed to run a show'},
-  // {title: 'Music by Jan'},
-  // {title: 'Visuals & Lights by Tim'},
-  // {title: 'This is really cool, but'},
-  // {title: 'CO2 wasted by LiveJS since the beginning'},
-  // {title: 'CO2 per person / year in Groningen'},
-  // {title: 'Do you want to party after a long day of talks?'},
-  // {title: 'Play in empty rooms'},
-  // {title: 'What can we do about this?'},
-  // {title: 'We as LiveJS'},
-  // {title: 'What is Jan doing?'},
-  // {title: 'What is Tim doing?'},
-  // {title: 'What can you do?'},
-  // {title: 'Art is giving back positive energy into the community'}
+  {title: 'LiveJS name explained'},
+  {title: 'LiveJS Manifesto'},
+
+  {title: 'Ruth John'},
+  {title: 'Tim Pietrusky'},
+  {title: 'Martin Schuhfuss'},
+  {title: 'Matt McKegg'},
+  {title: 'Sam Wray'},
+  {title: 'Jan Krutisch'},
+  {title: 'improjam'},
+  {title: 'Single Source of Truth'},
+  {title: 'JSConf Asia 2019'},
+  {title: 'JSConf Budapest 2019'},
+  {title: '"RefreshConf Lunch Show" explained'},
+  {title: 'Jans current stack'},
+  {title: 'Tims current stack'},
+  {title: 'Extinction Rebellion'}
 ]
 
 const fileExists = path => file => fs.existsSync(`${path}/${file}`)
@@ -54,7 +56,7 @@ for (let i = 0; i < mySlides.length; i++) {
 
   let slideName = title.toLowerCase().replace(/ /g, '-')
   slideName = slideName.replace(/&/g, 'and')
-  slideName = slideName.replace(/[,\/?]/g, '')
+  slideName = slideName.replace(/[,\/?!"]/g, '')
   slideName = slideName.replace(/--/g, '-')
 
   console.log(`'${slideName}',`)

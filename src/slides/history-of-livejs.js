@@ -31,25 +31,40 @@ import {
   StyledList,
   StyledOrderedListLarge
 } from '../components/list'
+import {Columns, ColumnCaption} from '../components/grid'
 
-const {Slide, A} = Main
-// const {Slide, A, B} = Half
+// const {Slide, A} = Main
+const {Slide, A, B} = HalfVertical
 
 const notes = (
   <Notes>
-    <p />
+    <h3>History of LiveJS</h3>
+    <ul>
+      <li>
+        <b>2016</b>: LiveJS was founded by Ruth and Tim at ScotlandJS after they
+        had their first ever collaboration talk about creating visuals using
+        JavaScript. Shortly after they invited Matt, Martin and Sam into LiveJS,
+        as all of them where doing awesome stuff using JavaScript.
+      </li>
+      <li>
+        <b>2017</b>: LiveJS has their own booth for JSConf EU in the community
+        area which means running performances in every break of the conference
+        for 3 days straight (including CSSConf EU). We also played for the after
+        parties.
+      </li>
+      <li>
+        <b>2018</b>: Jan joins LiveJS when we played again at JSConf EU as Jan
+        was an invited artist and jammed with us. We played the after party that
+        was happening at the same time as a karaoke 15m from us. We did the 50%
+        of the intro performance, the other half was nested loops.
+      </li>
+      <li>
+        <b>2019</b>: LiveJS does the opening for JSConf EU and performances in
+        the breaks with guest artists.
+      </li>
+    </ul>
   </Notes>
 )
-
-// const code = `npm start`
-
-// const ranges = []
-
-// const codeOptions = {
-//   lineNumbers: false,
-//   mode: 'bash',
-//   theme: 'dracula'
-// }
 
 /*
         background={`url("media/dmx512_universe.jpg")`}
@@ -60,32 +75,88 @@ const notes = (
 */
 export default (
   <Slide key={uuid()}>
-    {/*
-        luminave={['green']}
-      */}
     <Plugins.Data luminave={['']} />
     {notes}
 
     <A>
-      <Title>
-        History of<LivejsLogo colorText="#000"></LivejsLogo>
-      </Title>
+      <Subtitle>
+        History of<LivejsLogo colorText="#000" height="30vh"></LivejsLogo>
+      </Subtitle>
+    </A>
+    <B>
+      <Columns amount="4" className="outer-gap">
+        <div>
+          <Fragment order={1}>
+            <ColumnCaption>2016</ColumnCaption>
+            <br />
+            <StyledList>
+              <Fragment order={1}>
+                <li>LiveJS was founded by Ruth & Tim @ ScotlandJS</li>
+              </Fragment>
+              <Fragment order={3}>
+                <li class="no-border">Martin, Matt & Sam join</li>
+              </Fragment>
+            </StyledList>
+          </Fragment>
+        </div>
 
-      {/*
+        <div>
+          <Fragment order={4}>
+            <ColumnCaption>2017</ColumnCaption>
+            <br />
+            <StyledList>
+              <Fragment order={4}>
+                <li class="no-border">
+                  LiveJS has their own booth at JSConf EU
+                </li>
+              </Fragment>
+            </StyledList>
+          </Fragment>
+        </div>
+
+        <div>
+          <Fragment order={6}>
+            <ColumnCaption>2018</ColumnCaption>
+            <br />
+            <StyledList>
+              <Fragment order={6}>
+                <li class="no-border">Jan joins LiveJS</li>
+              </Fragment>
+            </StyledList>
+          </Fragment>
+        </div>
+
+        <div>
+          <Fragment order={8}>
+            <ColumnCaption>2019</ColumnCaption>
+            <br />
+            <StyledList>
+              <Fragment order={8}>
+                <li class="no-border">
+                  LiveJS does the opening show for JSConf EU
+                </li>
+              </Fragment>
+            </StyledList>
+          </Fragment>
+        </div>
+      </Columns>
+    </B>
+
+    {/*
       <ImportantLink href=""></ImportantLink>
       */}
 
-      {/*
+    {/*
       <Title>
         <TextMarker>this.stage</TextMarker>
       </Title>
       */}
 
-      {/* 
+    {/* 
         <Subtitle></Subtitle> 
       */}
 
-      {/*
+    {/*
       <StyledList>
         <Fragment order={2}>
           <li></li>
@@ -102,7 +173,7 @@ export default (
       </StyledList> 
       */}
 
-      {/* 
+    {/* 
       <StyledListLarge>
         <Fragment order={0}>
           <li class="no-border">
@@ -131,18 +202,18 @@ export default (
       </StyledListLarge>
        */}
 
-      {/* 
+    {/* 
       <LargeImage 
           src="media/"
           alt=""
       />
       */}
 
-      {/* 
+    {/* 
         <FitImage src="media/" alt="" /> 
       */}
 
-      {/* 
+    {/* 
       <Sequence order={1} steps={2} time={-1}>
         {(index, time, timeline) => {
           return <SuperVideo 
@@ -155,7 +226,7 @@ export default (
       </Sequence>
       */}
 
-      {/*
+    {/*
        <YouTube videoId="GiTkwz9AKhM" start={93}>
         {props => {
           return (
@@ -171,7 +242,7 @@ export default (
       </YouTube>
       */}
 
-      {/*
+    {/*
       <DmxChannels channels="6" width="90%" height="10em">
         <Channel background="" label="Red" value="0" className="inactive">
         </Channel>
@@ -193,19 +264,14 @@ export default (
       </DmxChannels>
     */}
 
-      {/* <StyledFooter>
+    {/* <StyledFooter>
         <ImportantLink href="https://www.youtube.com/watch?v=RsqeSfyhzdw">
           youtube.com/watch?v=RsqeSfyhzdw
         </ImportantLink>
       </StyledFooter> */}
 
-      {/* <Code2 ranges={ranges} options={codeOptions}>
+    {/* <Code2 ranges={ranges} options={codeOptions}>
             {code}
           </Code2> */}
-    </A>
-
-    {/* <B>
-     <Title>Making of</Title>
-    </B> */}
   </Slide>
 )

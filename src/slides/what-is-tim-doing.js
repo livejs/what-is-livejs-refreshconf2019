@@ -216,16 +216,16 @@ export default (
           </div>
         </Fragment>
 
-        <div>
-          <Fragment order={2}>
+        <Fragment order={2}>
+          <div>
             <SmallImage src="media/thorium.svg" alt="Thorium logo" />
 
             <br />
             <ImportantLink src="https://thoriumsim.com/">
               thoriumsim.com
             </ImportantLink>
-          </Fragment>
-        </div>
+          </div>
+        </Fragment>
       </Columns>
     </B>
   </Slide>

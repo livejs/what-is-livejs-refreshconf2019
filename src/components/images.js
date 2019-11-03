@@ -53,10 +53,14 @@ export const MediumImage = styled.img`
 `
 
 export const StyledLivejsLogo = styled.span`
-  height: 50vh;
+  --height: ${({height}) => height};
+
   vertical-align: middle;
 
   svg {
+    height: var(--height, 60vh);
+    width: auto;
+
     --color-gradient-start: ${({colorGradientStart}) => colorGradientStart};
     --color-gradient-stop: ${({colorGradientStop}) => colorGradientStop};
     --color-text: ${({colorText}) => colorText};

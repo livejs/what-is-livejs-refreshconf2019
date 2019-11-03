@@ -67,7 +67,7 @@ export default (
     {notes}
 
     <A>
-      <Title />
+      <Title>Matt McKegg</Title>
 
       {/*
       <ImportantLink href=""></ImportantLink>

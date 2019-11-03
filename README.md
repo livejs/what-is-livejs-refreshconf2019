@@ -2,6 +2,7 @@
 
 - [Slides](#slides)
   - [Run locally](#run-locally)
+    - [Modes](#modes)
   - [Add a new slide](#add-a-new-slide)
 
 ---
@@ -13,6 +14,12 @@
 * Install dependencies with `npm install`
 * Start the server with `npm start`
 * Open the slides on http://localhost:8083
+
+#### Modes
+
+* [Normal](http://localhost:8083) (will be used during development)
+* [Present - Live](http://localhost:8083?live=true) (will be used on the projector for the audience)
+* [Present - Speaker](http://localhost:8083?present=true)
 
 
 ### Add a new slide

@@ -22,7 +22,8 @@ import {
   topCenter,
   LargeImage,
   MediumImage,
-  SmallImage
+  SmallImage,
+  LivejsLogo
 } from '../components/images'
 import {fade, flip, cube} from '@dekk/animation'
 import {
@@ -30,26 +31,25 @@ import {
   StyledList,
   StyledOrderedListLarge
 } from '../components/list'
-import {Columns, ColumnCaption} from '../components/grid'
 
-const {Slide, A} = Main
-// const {Slide, A, B} = Half
+// const {Slide, A} = Main
+const {Slide, A, B} = Half
 
 const notes = (
   <Notes>
+    <h3>LiveJS Manifesto</h3>
+    <ol>
+      <li>
+        The development of ideas, the discussions of inspiration and the sharing
+        of knowledge
+      </li>
+      <li>Supporting each other and the community</li>
+      <li>Experimenting with new technology we are enthusiastic about</li>
+      <li>Our focus: Live Shows → music, projections, hardware</li>
+    </ol>
     <p />
   </Notes>
 )
-
-// const code = `npm start`
-
-// const ranges = []
-
-// const codeOptions = {
-//   lineNumbers: false,
-//   mode: 'bash',
-//   theme: 'dracula'
-// }
 
 /*
         background={`url("media/dmx512_universe.jpg")`}
@@ -60,48 +60,34 @@ const notes = (
 */
 export default (
   <Slide key={uuid()}>
-    {/*
-        luminave={['green']}
-      */}
     <Plugins.Data luminave={['']} />
     {notes}
 
     <A>
-      <Title />
-
-      {/*
-      <ImportantLink href=""></ImportantLink>
-      */}
-
-      {/*
-      <Title>
-        <TextMarker>this.stage</TextMarker>
-      </Title>
-      */}
-
-      {/* 
-        <Subtitle></Subtitle> 
-      */}
-
-      {/*
-      <StyledList>
+      <Subtitle>
+        <LivejsLogo height="40vh" colorText="#000"></LivejsLogo>
+        <br />
+        Manifesto
+      </Subtitle>
+    </A>
+    <B>
+      <StyledOrderedListLarge>
         <Fragment order={2}>
-          <li></li>
+          <li>Development of ideas, inspiration and sharing of knowledge</li>
         </Fragment>
         <Fragment order={3}>
-          <li></li>
+          <li>Supporting each other and the community</li>
         </Fragment>
         <Fragment order={4}>
-          <li></li>
+          <li>Experimenting with new technology</li>
         </Fragment>
         <Fragment order={5}>
-          <li class="no-border"></li>
+          <li class="no-border">Live Shows → music, visuals, lights</li>
         </Fragment>
-      </StyledList> 
-      */}
+      </StyledOrderedListLarge>
+    </B>
 
-      {/* 
-      <StyledListLarge>
+    {/* <StyledListLarge>
         <Fragment order={0}>
           <li class="no-border">
             Title
@@ -126,21 +112,20 @@ export default (
             </StyledList>
           </li>
         </Fragment>
-      </StyledListLarge>
-       */}
+      </StyledListLarge> */}
 
-      {/* 
+    {/* 
       <LargeImage 
           src="media/"
           alt=""
       />
       */}
 
-      {/* 
+    {/* 
         <FitImage src="media/" alt="" /> 
       */}
 
-      {/* 
+    {/* 
       <Sequence order={1} steps={2} time={-1}>
         {(index, time, timeline) => {
           return <SuperVideo 
@@ -153,7 +138,7 @@ export default (
       </Sequence>
       */}
 
-      {/*
+    {/*
        <YouTube videoId="GiTkwz9AKhM" start={93}>
         {props => {
           return (
@@ -169,7 +154,7 @@ export default (
       </YouTube>
       */}
 
-      {/*
+    {/*
       <DmxChannels channels="6" width="90%" height="10em">
         <Channel background="" label="Red" value="0" className="inactive">
         </Channel>
@@ -191,19 +176,14 @@ export default (
       </DmxChannels>
     */}
 
-      {/* <StyledFooter>
+    {/* <StyledFooter>
         <ImportantLink href="https://www.youtube.com/watch?v=RsqeSfyhzdw">
           youtube.com/watch?v=RsqeSfyhzdw
         </ImportantLink>
       </StyledFooter> */}
 
-      {/* <Code2 ranges={ranges} options={codeOptions}>
+    {/* <Code2 ranges={ranges} options={codeOptions}>
             {code}
           </Code2> */}
-    </A>
-
-    {/* <B>
-     <Title>Making of</Title>
-    </B> */}
   </Slide>
 )

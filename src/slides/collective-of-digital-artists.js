@@ -22,7 +22,8 @@ import {
   topCenter,
   LargeImage,
   MediumImage,
-  SmallImage
+  SmallImage,
+  LivejsLogo
 } from '../components/images'
 import {fade, flip, cube} from '@dekk/animation'
 import {
@@ -30,26 +31,22 @@ import {
   StyledList,
   StyledOrderedListLarge
 } from '../components/list'
+import {Columns} from '../components/grid'
 
-const {Slide, A} = Main
-// const {Slide, A, B} = Half
+// const {Slide, A} = Main
+const {Slide, A, B} = HalfVertical
 
 const notes = (
   <Notes>
-    <p />
+    <h3>What is LiveJS?</h3>
+    <ul>
+      <li>
+        We = a collective of digital artists that consists of 6 core members
+      </li>
+      <li>We are developers</li>
+    </ul>
   </Notes>
 )
-
-// const code = `npm start`
-
-// const ranges = []
-
-// const codeOptions = {
-//   lineNumbers: false,
-//   mode: 'bash',
-//   theme: 'dracula'
-// }
-
 /*
         background={`url("media/dmx512_universe.jpg")`}
         background="#fff"
@@ -68,24 +65,48 @@ export default (
     <A>
       <Title>
         Collective of
-        <br /> digital artists
+        <br />
+        digital artists
       </Title>
+    </A>
+    <B>
+      <Columns amount="6" gap="0">
+        <div>
+          <FitImage src="media/ruth_john.jpg" alt=""></FitImage>
+        </div>
+        <div>
+          <FitImage src="media/tim_pietrusky.jpg" alt=""></FitImage>
+        </div>
+        <div>
+          <FitImage src="media/martin_schuhfuss.jpg" alt=""></FitImage>
+        </div>
+        <div>
+          <FitImage src="media/matt_mckegg.jpg" alt=""></FitImage>
+        </div>
+        <div>
+          <FitImage src="media/sam_wray.jpg" alt=""></FitImage>
+        </div>
+        <div>
+          <FitImage src="media/jan_krutisch.jpg" alt=""></FitImage>
+        </div>
+      </Columns>
+    </B>
 
-      {/*
+    {/*
       <ImportantLink href=""></ImportantLink>
       */}
 
-      {/*
+    {/*
       <Title>
         <TextMarker>this.stage</TextMarker>
       </Title>
       */}
 
-      {/* 
+    {/* 
         <Subtitle></Subtitle> 
       */}
 
-      {/*
+    {/*
       <StyledList>
         <Fragment order={2}>
           <li></li>
@@ -102,7 +123,7 @@ export default (
       </StyledList> 
       */}
 
-      {/* 
+    {/* 
       <StyledListLarge>
         <Fragment order={0}>
           <li class="no-border">
@@ -131,18 +152,18 @@ export default (
       </StyledListLarge>
        */}
 
-      {/* 
+    {/* 
       <LargeImage 
           src="media/"
           alt=""
       />
       */}
 
-      {/* 
+    {/* 
         <FitImage src="media/" alt="" /> 
       */}
 
-      {/* 
+    {/* 
       <Sequence order={1} steps={2} time={-1}>
         {(index, time, timeline) => {
           return <SuperVideo 
@@ -155,7 +176,7 @@ export default (
       </Sequence>
       */}
 
-      {/*
+    {/*
        <YouTube videoId="GiTkwz9AKhM" start={93}>
         {props => {
           return (
@@ -171,7 +192,7 @@ export default (
       </YouTube>
       */}
 
-      {/*
+    {/*
       <DmxChannels channels="6" width="90%" height="10em">
         <Channel background="" label="Red" value="0" className="inactive">
         </Channel>
@@ -193,19 +214,14 @@ export default (
       </DmxChannels>
     */}
 
-      {/* <StyledFooter>
+    {/* <StyledFooter>
         <ImportantLink href="https://www.youtube.com/watch?v=RsqeSfyhzdw">
           youtube.com/watch?v=RsqeSfyhzdw
         </ImportantLink>
       </StyledFooter> */}
 
-      {/* <Code2 ranges={ranges} options={codeOptions}>
+    {/* <Code2 ranges={ranges} options={codeOptions}>
             {code}
           </Code2> */}
-    </A>
-
-    {/* <B>
-     <Title>Making of</Title>
-    </B> */}
   </Slide>
 )
