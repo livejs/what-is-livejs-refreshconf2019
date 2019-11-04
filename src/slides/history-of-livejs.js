@@ -88,7 +88,6 @@ export default (
         <div>
           <Fragment order={1}>
             <ColumnCaption>2016</ColumnCaption>
-            <br />
             <StyledList>
               <Fragment order={1}>
                 <li>LiveJS was founded by Ruth & Tim @ ScotlandJS</li>
@@ -103,7 +102,6 @@ export default (
         <div>
           <Fragment order={4}>
             <ColumnCaption>2017</ColumnCaption>
-            <br />
             <StyledList>
               <Fragment order={4}>
                 <li class="no-border">
@@ -117,7 +115,6 @@ export default (
         <div>
           <Fragment order={6}>
             <ColumnCaption>2018</ColumnCaption>
-            <br />
             <StyledList>
               <Fragment order={6}>
                 <li class="no-border">Jan joins LiveJS</li>
@@ -129,7 +126,6 @@ export default (
         <div>
           <Fragment order={8}>
             <ColumnCaption>2019</ColumnCaption>
-            <br />
             <StyledList>
               <Fragment order={8}>
                 <li class="no-border">

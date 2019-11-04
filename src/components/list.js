@@ -18,6 +18,7 @@ export const StyledList = styled.ul`
 
   li {
     position: relative;
+    line-height: 1.25em;
     text-align: left;
     display: inline-block;
     margin: 0.25em 0 0.25em 0;
