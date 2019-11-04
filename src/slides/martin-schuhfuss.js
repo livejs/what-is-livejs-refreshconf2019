@@ -16,7 +16,12 @@ import {
   StyledFooter
 } from '../components'
 import {css} from 'styled-components'
-import {Grid, Half, HalfVertical} from '../masters'
+import {
+  Grid,
+  Half,
+  HalfVertical,
+  HalfVerticalTopSmallBottomBig
+} from '../masters'
 import {ImportantLink} from '../components/links'
 import {
   topCenter,
@@ -32,32 +37,25 @@ import {
 } from '../components/list'
 import {Columns, ColumnCaption} from '../components/grid'
 
-const {Slide, A} = Main
-// const {Slide, A, B} = Half
+// const {Slide, A} = Main
+const {Slide, A, B} = HalfVerticalTopSmallBottomBig
 
 const notes = (
   <Notes>
-    <p />
+    <h3>Martin Schuhfuss</h3>
+    <ul>
+      <li>
+        At LiveJS he does lights as usefulthink using his own software
+        fivetwelve. This is also the base package that Tim is using to control
+        lights over DMX512. Martin also created an app that lets you control
+        lights using CSS.
+      </li>
+      <li>Creates LED art</li>
+      <li>Recreates everything that comes into his mind using hardware.</li>
+    </ul>
   </Notes>
 )
 
-// const code = `npm start`
-
-// const ranges = []
-
-// const codeOptions = {
-//   lineNumbers: false,
-//   mode: 'bash',
-//   theme: 'dracula'
-// }
-
-/*
-        background={`url("media/dmx512_universe.jpg")`}
-        background="#fff"
-        mixin="--slide-color: black" 
-        animationOut={flip.y} 
-        animationIn={flip.y}
-*/
 export default (
   <Slide key={uuid()}>
     {/*
@@ -68,22 +66,50 @@ export default (
 
     <A>
       <Title>Martin Schuhfuss</Title>
+    </A>
 
-      {/*
+    <B>
+      <Columns amount="2">
+        <div>
+          <FitImage src="media/martin_schuhfuss.jpg" alt=""></FitImage>
+        </div>
+        <div>
+          <StyledList>
+            <Fragment order={2}>
+              <li>
+                Lights with{' '}
+                <ImportantLink href="https://github.com/beyondscreen/fivetwelve">
+                  fivetwelve
+                </ImportantLink>{' '}
+                by using CSS as usefulthink
+              </li>
+            </Fragment>
+            <Fragment order={3}>
+              <li>LED art</li>
+            </Fragment>
+            <Fragment order={4}>
+              <li>Hardware hacking</li>
+            </Fragment>
+          </StyledList>
+        </div>
+      </Columns>
+    </B>
+
+    {/*
       <ImportantLink href=""></ImportantLink>
       */}
 
-      {/*
+    {/*
       <Title>
         <TextMarker>this.stage</TextMarker>
       </Title>
       */}
 
-      {/* 
+    {/* 
         <Subtitle></Subtitle> 
       */}
 
-      {/*
+    {/*
       <StyledList>
         <Fragment order={2}>
           <li></li>
@@ -100,7 +126,7 @@ export default (
       </StyledList> 
       */}
 
-      {/* 
+    {/* 
       <StyledListLarge>
         <Fragment order={0}>
           <li class="no-border">
@@ -129,18 +155,18 @@ export default (
       </StyledListLarge>
        */}
 
-      {/* 
+    {/* 
       <LargeImage 
           src="media/"
           alt=""
       />
       */}
 
-      {/* 
+    {/* 
         <FitImage src="media/" alt="" /> 
       */}
 
-      {/* 
+    {/* 
       <Sequence order={1} steps={2} time={-1}>
         {(index, time, timeline) => {
           return <SuperVideo 
@@ -153,7 +179,7 @@ export default (
       </Sequence>
       */}
 
-      {/*
+    {/*
        <YouTube videoId="GiTkwz9AKhM" start={93}>
         {props => {
           return (
@@ -169,7 +195,7 @@ export default (
       </YouTube>
       */}
 
-      {/*
+    {/*
       <DmxChannels channels="6" width="90%" height="10em">
         <Channel background="" label="Red" value="0" className="inactive">
         </Channel>
@@ -191,19 +217,14 @@ export default (
       </DmxChannels>
     */}
 
-      {/* <StyledFooter>
+    {/* <StyledFooter>
         <ImportantLink href="https://www.youtube.com/watch?v=RsqeSfyhzdw">
           youtube.com/watch?v=RsqeSfyhzdw
         </ImportantLink>
       </StyledFooter> */}
 
-      {/* <Code2 ranges={ranges} options={codeOptions}>
+    {/* <Code2 ranges={ranges} options={codeOptions}>
             {code}
           </Code2> */}
-    </A>
-
-    {/* <B>
-     <Title>Making of</Title>
-    </B> */}
   </Slide>
 )

@@ -42,13 +42,20 @@ const {Slide, A, B} = HalfVerticalTopSmallBottomBig
 
 const notes = (
   <Notes>
-    <h3>Ruth John</h3>
+    <h3>Tim Pietrusky</h3>
     <ul>
-      <li>At LiveJS she does visuals as rumyra using her own software Vizra</li>
-      <li>Runs the Generative Art Podcast together with Tim Holman</li>
       <li>
-        Writes documentation and demos for MDN for topics such as the Web Audio
-        API
+        At LiveJS he does visuals using modV and lights using his own software
+        luminave under the alias NERDDISCO. NERDISCO is also the name of the
+        GitHub Organisation that hosts all of his open source projects related
+        to visuald & lights.
+      </li>
+      <li>
+        Creates LED art that works in combination with the visuals from modV
+      </li>
+      <li>
+        Controls the lights in Space Ship Simulators with an integration into
+        luminave
       </li>
     </ul>
   </Notes>
@@ -85,18 +92,15 @@ export default (
               </li>
             </Fragment>
             <Fragment order={3}>
-              <li>LEDs</li>
+              <li>LED art</li>
             </Fragment>
             <Fragment order={4}>
               <li>
-                Writer for{'  '}
-                <ImportantLink href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Using_Web_Audio_API">
-                  MDN
-                </ImportantLink>
+                <ImportantLink href="https://github.com/NERDDISCO/luminave-thorium">
+                  Space Ship Simulator
+                </ImportantLink>{' '}
+                integration for luminave
               </li>
-            </Fragment>
-            <Fragment order={5}>
-              <li class="no-border"></li>
             </Fragment>
           </StyledList>
         </div>

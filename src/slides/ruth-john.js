@@ -96,9 +96,6 @@ export default (
                 </ImportantLink>
               </li>
             </Fragment>
-            <Fragment order={5}>
-              <li class="no-border"></li>
-            </Fragment>
           </StyledList>
         </div>
       </Columns>

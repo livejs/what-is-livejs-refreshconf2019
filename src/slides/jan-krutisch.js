@@ -16,7 +16,12 @@ import {
   StyledFooter
 } from '../components'
 import {css} from 'styled-components'
-import {Grid, Half, HalfVertical} from '../masters'
+import {
+  Grid,
+  Half,
+  HalfVertical,
+  HalfVerticalTopSmallBottomBig
+} from '../masters'
 import {ImportantLink} from '../components/links'
 import {
   topCenter,
@@ -32,32 +37,19 @@ import {
 } from '../components/list'
 import {Columns, ColumnCaption} from '../components/grid'
 
-const {Slide, A} = Main
-// const {Slide, A, B} = Half
+// const {Slide, A} = Main
+const {Slide, A, B} = HalfVerticalTopSmallBottomBig
 
 const notes = (
   <Notes>
-    <p />
+    <h3>Jan Krutisch</h3>
+    <ul>
+      <li>At LiveJS he does music as halfbyte using his own improjam.</li>
+      <li>Gets money to work on Web MIDI</li>
+    </ul>
   </Notes>
 )
 
-// const code = `npm start`
-
-// const ranges = []
-
-// const codeOptions = {
-//   lineNumbers: false,
-//   mode: 'bash',
-//   theme: 'dracula'
-// }
-
-/*
-        background={`url("media/dmx512_universe.jpg")`}
-        background="#fff"
-        mixin="--slide-color: black" 
-        animationOut={flip.y} 
-        animationIn={flip.y}
-*/
 export default (
   <Slide key={uuid()}>
     {/*
@@ -68,22 +60,47 @@ export default (
 
     <A>
       <Title>Jan Krutisch</Title>
+    </A>
 
-      {/*
+    <B>
+      <Columns amount="2">
+        <div>
+          <FitImage src="media/jan_krutisch.jpg" alt=""></FitImage>
+        </div>
+        <div>
+          <StyledList>
+            <Fragment order={2}>
+              <li>
+                Music with{' '}
+                <ImportantLink href="https://github.com/halfbyte/improjam">
+                  improjam
+                </ImportantLink>{' '}
+                as halfbyte
+              </li>
+            </Fragment>
+            <Fragment order={3}>
+              <li>MIDI controller</li>
+            </Fragment>
+          </StyledList>
+        </div>
+      </Columns>
+    </B>
+
+    {/*
       <ImportantLink href=""></ImportantLink>
       */}
 
-      {/*
+    {/*
       <Title>
         <TextMarker>this.stage</TextMarker>
       </Title>
       */}
 
-      {/* 
+    {/* 
         <Subtitle></Subtitle> 
       */}
 
-      {/*
+    {/*
       <StyledList>
         <Fragment order={2}>
           <li></li>
@@ -100,7 +117,7 @@ export default (
       </StyledList> 
       */}
 
-      {/* 
+    {/* 
       <StyledListLarge>
         <Fragment order={0}>
           <li class="no-border">
@@ -129,18 +146,18 @@ export default (
       </StyledListLarge>
        */}
 
-      {/* 
+    {/* 
       <LargeImage 
           src="media/"
           alt=""
       />
       */}
 
-      {/* 
+    {/* 
         <FitImage src="media/" alt="" /> 
       */}
 
-      {/* 
+    {/* 
       <Sequence order={1} steps={2} time={-1}>
         {(index, time, timeline) => {
           return <SuperVideo 
@@ -153,7 +170,7 @@ export default (
       </Sequence>
       */}
 
-      {/*
+    {/*
        <YouTube videoId="GiTkwz9AKhM" start={93}>
         {props => {
           return (
@@ -169,7 +186,7 @@ export default (
       </YouTube>
       */}
 
-      {/*
+    {/*
       <DmxChannels channels="6" width="90%" height="10em">
         <Channel background="" label="Red" value="0" className="inactive">
         </Channel>
@@ -191,19 +208,14 @@ export default (
       </DmxChannels>
     */}
 
-      {/* <StyledFooter>
+    {/* <StyledFooter>
         <ImportantLink href="https://www.youtube.com/watch?v=RsqeSfyhzdw">
           youtube.com/watch?v=RsqeSfyhzdw
         </ImportantLink>
       </StyledFooter> */}
 
-      {/* <Code2 ranges={ranges} options={codeOptions}>
+    {/* <Code2 ranges={ranges} options={codeOptions}>
             {code}
           </Code2> */}
-    </A>
-
-    {/* <B>
-     <Title>Making of</Title>
-    </B> */}
   </Slide>
 )

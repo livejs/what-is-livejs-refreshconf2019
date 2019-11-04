@@ -15,16 +15,9 @@ import LuminaveButton from './components/luminaveButton'
 const mySlides = [
   'cover',
 
-  'collective-of-digital-artists',
   'livejs-name-explained',
 
-  // talk about each of us individually to talk about the history?
-  'history-of-livejs',
-  // maybe show pics of the different events that are mentioned?
-  // 'history-of-livejs-1',
-
-  // TODO: Add content about each person
-  // 'livejs-crew',
+  'collective-of-digital-artists',
   'ruth-john',
   'tim-pietrusky',
   'martin-schuhfuss',
@@ -32,31 +25,12 @@ const mySlides = [
   'sam-wray',
   'jan-krutisch',
 
+  'history-of-livejs',
+
   'livejs-manifesto',
 
-  'how-to-organise-a-show',
-  'single-source-of-truth',
-  // 3 phases
-  // start conversation about a gig, what can we offer and what do they want?
-  // at least 2 people from LiveJS to run a show
-  // technical requirements
-  //
-  // Single source of truth
-  //   all conversation is handled by a livejs volunteer for the event
-  //   on-sight conversations with the stuff with one peson so that everyone else can concentrate on their stuff
-
-  // Info graphic with 3 steps (before, during, after)
-  // technical rider
-  // before a gig
-  // organize using notion and email thread and slack
-  // during a gig / share airbnb together to reduce cost
-  // after a gig / resouces on GitHub / collect videos & images
-
-  // non-profit for non-profit events
-  // profit for profit events
-
-  'what-is-needed-to-run-a-show',
-  // At least visuals + music, lights are a nice to have
+  'what-is-a-live-show',
+  'how-to-run-a-show-in-3-phases',
 
   'shows-around-the-world',
   'jsconfeu-opening-2019',

@@ -40,12 +40,11 @@ const notes = (
     <h3>LiveJS Manifesto</h3>
     <ol>
       <li>
-        The development of ideas, the discussions of inspiration and the sharing
-        of knowledge
+        The development of ideas, inspiration and the sharing of knowledge
       </li>
       <li>Supporting each other and the community</li>
       <li>Experimenting with new technology we are enthusiastic about</li>
-      <li>Our focus: Live Shows → music, projections, hardware</li>
+      <li>Live Shows should be in our focus → music, projections, hardware</li>
     </ol>
     <p />
   </Notes>
@@ -82,7 +81,7 @@ export default (
           <li>Experimenting with new technology</li>
         </Fragment>
         <Fragment order={5}>
-          <li class="no-border">Live Shows → music, visuals, lights</li>
+          <li class="no-border">Live Shows</li>
         </Fragment>
       </StyledOrderedListLarge>
     </B>

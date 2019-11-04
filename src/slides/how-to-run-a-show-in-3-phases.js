@@ -16,12 +16,7 @@ import {
   StyledFooter
 } from '../components'
 import {css} from 'styled-components'
-import {
-  Grid,
-  Half,
-  HalfVertical,
-  HalfVerticalTopSmallBottomBig
-} from '../masters'
+import {Grid, Half, HalfVertical} from '../masters'
 import {ImportantLink} from '../components/links'
 import {
   topCenter,
@@ -38,30 +33,59 @@ import {
 import {Columns, ColumnCaption} from '../components/grid'
 
 // const {Slide, A} = Main
-const {Slide, A, B} = HalfVerticalTopSmallBottomBig
+const {Slide, A, B} = HalfVertical
 
 const notes = (
   <Notes>
-    <h3>Matt McKegg</h3>
+    <h3>How to run a show in 3 phases</h3>
     <ul>
+      <li>This usually happens in 3 phases</li>
       <li>
-        At LiveJS he does music as DESTROY WITH SCIENCE using his own software
-        loop drop. The first version was written in JS, but this one is in rust
-        as the Web Audio API is not very accurate for what he is after.
+        <b>1. Initialize</b>: We get into a conversation with the organizer of
+        an event and make sure that the base requirements are there and eveyone
+        knows what they can expect. We need <b>at least 2 people</b> to run a
+        show (music & visuals). The more people there are, the better and longer
+        will our show be. Also we can handle more guest artists.
       </li>
       <li>
-        Besides using loop drop he is in love with syntesizer and has a lot of
-        them. He always travels with a bunch of them in a big suitcase.
+        <b>2. Prepare</b>: SSOT: All conversation is handled by a livejs
+        volunteer for the event, on-sight conversations with the stuff with one
+        peson so that everyone else can concentrate on their stuff. All
+        information is collected in Notion in one Document.
+        <br /> <br />
+        Share an airbnb together if that is the only way to get as many people
+        on board as possible
+        <br /> <br />
+        We create custom visuals for the event (e.g. the logo), add the light
+        setup (this usually takes a lot of time as every venue is different and
+        it's usally a bit of time to get all the information)
       </li>
       <li>
-        Contributs to the decentralized platform Scuttlebutt and has created the
-        desktop client Patchwork. You should really check it out if you don't
-        want to give big corporations your own content for free.
+        <b>3. Execute</b>: At least the nights before the event we test the
+        audio (DJ mixer & speakears are working), the visual (HDMI to TV or
+        projector or LED Wall) & the light (did the patch was succesful) setup
+        in the venue. Sometimes we do the intro and parties which are in
+        different venues. All of this has to be tested. <br /> <br />
+        We help guest artist to use the setup and make their stay as comfortable
+        as possible.
+        <br />
+        During the show we make sure that the acting artists have everything
+        they need. <br />
+        After the show we talk about the good and the bad things. We also create
+        a documentation the days after the show to have a reference in the
+        future of what we did.
       </li>
     </ul>
   </Notes>
 )
 
+/*
+        background={`url("media/dmx512_universe.jpg")`}
+        background="#fff"
+        mixin="--slide-color: black" 
+        animationOut={flip.y} 
+        animationIn={flip.y}
+*/
 export default (
   <Slide key={uuid()}>
     {/*
@@ -71,40 +95,71 @@ export default (
     {notes}
 
     <A>
-      <Title>Matt McKegg</Title>
+      <Subtitle>How to run a show in 3 phases</Subtitle>
     </A>
 
     <B>
-      <Columns amount="2">
+      <Columns amount="3" className="outer-gap">
         <div>
-          <FitImage src="media/matt_mckegg.jpg" alt=""></FitImage>
+          <Fragment order={1}>
+            <ColumnCaption>1. Initialize</ColumnCaption>
+            <StyledList>
+              <Fragment order={2}>
+                <li>Type of event?</li>
+              </Fragment>
+              <Fragment order={3}>
+                <li>What can we do, what do you need?</li>
+              </Fragment>
+              <Fragment order={4}>
+                <li>How many LiveJS members?</li>
+              </Fragment>
+              <Fragment order={5}>
+                <li>
+                  <ImportantLink href="https://www.notion.so/livejs/Technical-Requirements-f69bd653e26d445d8eb37c9396b884ce">
+                    Rider
+                  </ImportantLink>{' '}
+                  (Techical Requirements)
+                </li>
+              </Fragment>
+            </StyledList>
+          </Fragment>
         </div>
+
         <div>
-          <StyledList>
-            <Fragment order={2}>
-              <li>
-                Music with{' '}
-                <ImportantLink href="https://github.com/mmckegg/rust-loop-drop">
-                  loop drop
-                </ImportantLink>{' '}
-                as DESTROY WITH SCIENCE
-              </li>
-            </Fragment>
-            <Fragment order={3}>
-              <li>Synthesizer</li>
-            </Fragment>
-            <Fragment order={4}>
-              <li>
-                <ImportantLink href="https://www.scuttlebutt.nz/">
-                  Scuttlebutt
-                </ImportantLink>{' '}
-                &{' '}
-                <ImportantLink href="https://github.com/ssbc/patchwork">
-                  Patchwork
-                </ImportantLink>
-              </li>
-            </Fragment>
-          </StyledList>
+          <Fragment order={7}>
+            <ColumnCaption>2. Prepare</ColumnCaption>
+            <StyledList>
+              <Fragment order={8}>
+                <li>Single Source of Truth</li>
+              </Fragment>
+              <Fragment order={9}>
+                <li>Plan Travel & Accomendation</li>
+              </Fragment>
+              <Fragment order={10}>
+                <li>Custom visuals, patch lights, update software</li>
+              </Fragment>
+            </StyledList>
+          </Fragment>
+        </div>
+
+        <div>
+          <Fragment order={17}>
+            <ColumnCaption>3. Execute</ColumnCaption>
+            <StyledList>
+              <Fragment order={18}>
+                <li>Test the audio / visual / light setup at the venue</li>
+              </Fragment>
+              <Fragment order={19}>
+                <li>Handle guest artists</li>
+              </Fragment>
+              <Fragment order={20}>
+                <li>Run the show / talk</li>
+              </Fragment>
+              <Fragment order={21}>
+                <li>Debriefing & documentation</li>
+              </Fragment>
+            </StyledList>
+          </Fragment>
         </div>
       </Columns>
     </B>

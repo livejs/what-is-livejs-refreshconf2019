@@ -66,7 +66,10 @@ export default (
     {notes}
 
     <A>
-      <Title>Single Source of Truth</Title>
+      <Title>
+        What is a<br />
+        "live show"?
+      </Title>
 
       {/*
       <ImportantLink href=""></ImportantLink>
