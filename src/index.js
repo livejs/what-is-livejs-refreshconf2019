@@ -64,6 +64,7 @@ const mySlides = [
 
   'this-is-really-cool-but',
   'co2-wasted-by-livejs-since-the-beginning',
+  // TODO: a chart where everyone is living -> Airport -> CO2
   'co2-per-person-year-in-groningen',
 
   // show me your hands!
