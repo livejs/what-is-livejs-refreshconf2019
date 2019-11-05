@@ -51,24 +51,28 @@ const notes = (
 // }
 
 /*
-
+        background={`url("media/dmx512_universe.jpg")`}
         background="#fff"
         mixin="--slide-color: black"
         animationOut={flip.y}
         animationIn={flip.y}
 */
 export default (
-  <Slide key={uuid()} background={`url("media/sea-level-rise-by-2050.png")`}>
+  <Slide key={uuid()}>
     {/*
         luminave={['green']}
       */}
-    <Plugins.Data luminave={['']} />
+
     {notes}
 
     <A>
-      <Fragment order={1}>
-        <Title>CO<sub>2</sub> wasted by LiveJS since the beginning</Title>
+      <Title>
+        {'~ 97t'}
+      </Title>
+      <Fragment order={2}>
+        <Subtitle>(only national/international travel)</Subtitle>
       </Fragment>
+
       {/*
       <ImportantLink href=""></ImportantLink>
       */}

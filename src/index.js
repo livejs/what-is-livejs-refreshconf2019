@@ -64,7 +64,11 @@ const mySlides = [
 
   'this-is-really-cool-but',
   'co2-wasted-by-livejs-since-the-beginning',
-  'co2-per-person-year-in-groningen',
+  'tons-of-co2',
+  'personal-budget',
+  // TODO: I'm going to try to find numbers for this, if not, just leave it out
+
+  // 'co2-per-person-year-in-groningen',
 
   // show me your hands!
   'do-you-want-to-party-after-a-long-day-of-talks',
