@@ -69,7 +69,9 @@ export default (
     {notes}
 
     <A>
-      {/* <Title>Play in empty rooms</Title> */}
+      <Fragment order={1}>
+        <Title>Do you want to party after a long day of talks?</Title>
+      </Fragment>
 
       {/*
       <ImportantLink href=""></ImportantLink>

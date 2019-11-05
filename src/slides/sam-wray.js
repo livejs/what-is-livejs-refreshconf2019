@@ -44,6 +44,7 @@ const notes = (
   <Notes>
     <h3>Sam Wray</h3>
     <ul>
+      <li>Experience Technologist at publicis•poke</li>
       <li>
         At LiveJS he does music as 2xAA using Game Boys and visuals as NOSIGNAL
         using his own software modV.

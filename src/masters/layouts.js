@@ -161,6 +161,17 @@ layouts.AB.leftBigRightSmall = css`
 `
 
 /**
+ * Layout for AB
+ * @private
+ */
+layouts.AB.leftSmallRightBig = css`
+  ${layouts.base};
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 'slotA slotB';
+`
+
+/**
  * Layout for ABC
  * @private
  */

@@ -18,6 +18,7 @@ const mySlides = [
   'livejs-name-explained',
 
   'collective-of-digital-artists',
+  // TODO: Update every person with their role at livejs, what they love and how they make money
   'ruth-john',
   'tim-pietrusky',
   'martin-schuhfuss',
@@ -26,50 +27,50 @@ const mySlides = [
   'jan-krutisch',
 
   'history-of-livejs',
-
   'livejs-manifesto',
-
   'what-is-a-live-show',
   'how-to-run-a-show-in-3-phases',
 
-  'shows-around-the-world',
-  'jsconfeu-opening-2019',
-  'jsconf-asia-2019',
-  'jsconf-budapest-2019',
   'refreshconf-lunch-show-explained',
 
   'jans-current-stack',
   'improjam',
+  'improjam-2',
+  'teapot',
+  'teapot-2',
 
   'tims-current-stack',
-  // maybe a diagram to explain what I'm using? And then a live demo?
+  // TODO diagram to explain what I'm using? And then a live demo?
 
-  // Describe the current stack of jan and tim and don't go into what
-  // they have created as this is covered
-  // in the details about each crew member
-
-  // 'modular-visualizations-with-modv',
-  // 'control-lights-with-luminave',
-
-  'dmx512',
+  // 'dmx512',
   'dmx512-universe-diagram',
-  'dmx512-fixture',
-  'dmx512-universe',
+  // 'dmx512-fixture',
+  // 'dmx512-universe',
   // dmx512 diagram to explain how this works
-  'dmx512-controller',
+  // 'dmx512-controller',
   // 'arduino-leonardo',
   'webusb-dmx512-controller',
   'cyberpunk-goggles',
   // maybe a diagram?
 
+  'jsconfeu-opening-2019',
+  'jsconf-asia-2019',
+  'jsconf-budapest-2019',
+  'shows-around-the-world',
   'this-is-really-cool-but',
   'co2-wasted-by-livejs-since-the-beginning',
+
   // TODO: a chart where everyone is living -> Airport -> CO2
+
+  'tons-of-co2',
+  'personal-budget',
+  // TODO: I'm going to try to find numbers for this, if not, just leave it out
   'co2-per-person-year-in-groningen',
 
   // show me your hands!
-  'do-you-want-to-party-after-a-long-day-of-talks',
+  // TODO: The question should be a fragment
   'play-in-empty-rooms',
+  // 'do-you-want-to-party-after-a-long-day-of-talks',
 
   'what-can-we-do-about-this',
   'we-as-livejs',

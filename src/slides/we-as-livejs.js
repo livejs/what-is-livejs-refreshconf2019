@@ -16,7 +16,7 @@ import {
   StyledFooter
 } from '../components'
 import {css} from 'styled-components'
-import {Grid, Half, HalfVertical} from '../masters'
+import {Grid, Half, HalfVertical, HalfLeftSmallRightBig} from '../masters'
 import {ImportantLink} from '../components/links'
 import {
   topCenter,
@@ -32,24 +32,20 @@ import {
   StyledOrderedListLarge
 } from '../components/list'
 
-const {Slide, A} = Main
-// const {Slide, A, B} = Half
+// const {Slide, A} = Main
+const {Slide, A, B} = HalfLeftSmallRightBig
 
 const notes = (
   <Notes>
-    <p />
+    <h3>We as LiveJS?</h3>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
   </Notes>
 )
-
-// const code = `npm start`
-
-// const ranges = []
-
-// const codeOptions = {
-//   lineNumbers: false,
-//   mode: 'bash',
-//   theme: 'dracula'
-// }
 
 /*
         background={`url("media/dmx512_universe.jpg")`}
@@ -69,24 +65,42 @@ export default (
     <A>
       <Title>
         We as
-        <LivejsLogo colorText="#000"></LivejsLogo>
+        <LivejsLogo height="50vh" colorText="#000"></LivejsLogo>
       </Title>
+    </A>
 
-      {/*
+    <B>
+      <StyledOrderedListLarge>
+        <Fragment order={2}>
+          <li>Workshops to empower local communities to do shows themselves</li>
+        </Fragment>
+        <Fragment order={3}>
+          <li>Talks to give context and spread creativity</li>
+        </Fragment>
+        <Fragment order={4}>
+          <li>Call for Artists</li>
+        </Fragment>
+        <Fragment order={5}>
+          <li class="no-border">LiveJS Community on Slack</li>
+        </Fragment>
+      </StyledOrderedListLarge>
+    </B>
+
+    {/*
       <ImportantLink href=""></ImportantLink>
       */}
 
-      {/*
+    {/*
       <Title>
         <TextMarker>this.stage</TextMarker>
       </Title>
       */}
 
-      {/* 
+    {/* 
         <Subtitle></Subtitle> 
       */}
 
-      {/*
+    {/*
       <StyledList>
         <Fragment order={2}>
           <li></li>
@@ -103,7 +117,7 @@ export default (
       </StyledList> 
       */}
 
-      {/* 
+    {/* 
       <StyledListLarge>
         <Fragment order={0}>
           <li class="no-border">
@@ -132,18 +146,18 @@ export default (
       </StyledListLarge>
        */}
 
-      {/* 
+    {/* 
       <LargeImage 
           src="media/"
           alt=""
       />
       */}
 
-      {/* 
+    {/* 
         <FitImage src="media/" alt="" /> 
       */}
 
-      {/* 
+    {/* 
       <Sequence order={1} steps={2} time={-1}>
         {(index, time, timeline) => {
           return <SuperVideo 
@@ -156,7 +170,7 @@ export default (
       </Sequence>
       */}
 
-      {/*
+    {/*
        <YouTube videoId="GiTkwz9AKhM" start={93}>
         {props => {
           return (
@@ -172,7 +186,7 @@ export default (
       </YouTube>
       */}
 
-      {/*
+    {/*
       <DmxChannels channels="6" width="90%" height="10em">
         <Channel background="" label="Red" value="0" className="inactive">
         </Channel>
@@ -194,19 +208,14 @@ export default (
       </DmxChannels>
     */}
 
-      {/* <StyledFooter>
+    {/* <StyledFooter>
         <ImportantLink href="https://www.youtube.com/watch?v=RsqeSfyhzdw">
           youtube.com/watch?v=RsqeSfyhzdw
         </ImportantLink>
       </StyledFooter> */}
 
-      {/* <Code2 ranges={ranges} options={codeOptions}>
+    {/* <Code2 ranges={ranges} options={codeOptions}>
             {code}
           </Code2> */}
-    </A>
-
-    {/* <B>
-     <Title>Making of</Title>
-    </B> */}
   </Slide>
 )

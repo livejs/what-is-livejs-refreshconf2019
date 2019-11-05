@@ -44,6 +44,7 @@ const notes = (
   <Notes>
     <h3>Martin Schuhfuss</h3>
     <ul>
+      <li>Creative Developer at Ubilabs</li>
       <li>
         At LiveJS he does lights as usefulthink using his own software
         fivetwelve. This is also the base package that Tim is using to control

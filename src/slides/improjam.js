@@ -1,12 +1,12 @@
 import Config from './config'
 import React from 'react'
 import uuid from 'uuid/v4'
-import Fragment, {Sequence} from '@dekk/fragment'
-import {Text, Title, Subtitle, Uppercase, Bold, Center, Code} from '@dekk/text'
-import {default as MaskedImage, FitImage} from '@dekk/image'
+import Fragment, { Sequence } from '@dekk/fragment'
+import { Text, Title, Subtitle, Uppercase, Bold, Center, Code } from '@dekk/text'
+import { default as MaskedImage, FitImage } from '@dekk/image'
 import Notes from '@dekk/speaker-notes'
-import {Main} from '@dekk/master-slides'
-import {Plugins} from '@dekk/deck'
+import { Main } from '@dekk/master-slides'
+import { Plugins } from '@dekk/deck'
 import {
   RainbowText,
   TextMarker,
@@ -15,23 +15,23 @@ import {
   SuperVideo,
   StyledFooter
 } from '../components'
-import {css} from 'styled-components'
-import {Grid, Half, HalfVertical} from '../masters'
-import {ImportantLink} from '../components/links'
+import { css } from 'styled-components'
+import { Grid, Half, HalfVertical } from '../masters'
+import { ImportantLink } from '../components/links'
 import {
   topCenter,
   LargeImage,
   MediumImage,
   SmallImage
 } from '../components/images'
-import {fade, flip, cube} from '@dekk/animation'
+import { fade, flip, cube } from '@dekk/animation'
 import {
   StyledListLarge,
   StyledList,
   StyledOrderedListLarge
 } from '../components/list'
 
-const {Slide, A} = Main
+const { Slide, A } = Main
 // const {Slide, A, B} = Half
 
 const notes = (
@@ -53,12 +53,12 @@ const notes = (
 /*
         background={`url("media/dmx512_universe.jpg")`}
         background="#fff"
-        mixin="--slide-color: black" 
-        animationOut={flip.y} 
+        mixin="--slide-color: black"
+        animationOut={flip.y}
         animationIn={flip.y}
 */
 export default (
-  <Slide key={uuid()}>
+  <Slide key={uuid()} background={`url("media/push-2.jpg") center`} backgroundPosition='center'>
     {/*
         luminave={['green']}
       */}
@@ -67,6 +67,21 @@ export default (
 
     <A>
       <Title>improjam</Title>
+      <Fragment order={1}>
+        <Subtitle>Web MIDI sequencer</Subtitle>
+      </Fragment>
+
+      <Fragment order={2}>
+        <Subtitle>Ableton Push as UI</Subtitle>
+      </Fragment>
+
+      <Fragment order={3}>
+        <Subtitle>Based on Electron</Subtitle>
+      </Fragment>
+
+      <Fragment order={4}>
+        <Subtitle>(because of the Push display)</Subtitle>
+      </Fragment>
 
       {/*
       <ImportantLink href=""></ImportantLink>
@@ -78,8 +93,8 @@ export default (
       </Title>
       */}
 
-      {/* 
-        <Subtitle></Subtitle> 
+      {/*
+        <Subtitle></Subtitle>
       */}
 
       {/*
@@ -96,10 +111,10 @@ export default (
         <Fragment order={5}>
           <li class="no-border"></li>
         </Fragment>
-      </StyledList> 
+      </StyledList>
       */}
 
-      {/* 
+      {/*
       <StyledListLarge>
         <Fragment order={0}>
           <li class="no-border">
@@ -128,21 +143,21 @@ export default (
       </StyledListLarge>
        */}
 
-      {/* 
-      <LargeImage 
+      {/*
+      <LargeImage
           src="media/"
           alt=""
       />
       */}
 
-      {/* 
-        <FitImage src="media/" alt="" /> 
+      {/*
+        <FitImage src="media/" alt="" />
       */}
 
-      {/* 
+      {/*
       <Sequence order={1} steps={2} time={-1}>
         {(index, time, timeline) => {
-          return <SuperVideo 
+          return <SuperVideo
                 //src="media/IMG_0659.m4v#t=93,170"
                 // src="media/JSConfEU_18_Replay_Opener.mp4#t=623"
                 src="media/JSConfEU_LiveJS_Performance_2018.mp4#t=2"

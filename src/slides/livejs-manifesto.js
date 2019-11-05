@@ -16,7 +16,7 @@ import {
   StyledFooter
 } from '../components'
 import {css} from 'styled-components'
-import {Grid, Half, HalfVertical} from '../masters'
+import {Grid, Half, HalfVertical, HalfLeftSmallRightBig} from '../masters'
 import {ImportantLink} from '../components/links'
 import {
   topCenter,

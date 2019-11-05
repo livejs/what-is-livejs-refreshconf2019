@@ -22,7 +22,8 @@ import {
   topCenter,
   LargeImage,
   MediumImage,
-  SmallImage
+  SmallImage,
+  LivejsLogo
 } from '../components/images'
 import {fade, flip, cube} from '@dekk/animation'
 import {
@@ -51,14 +52,16 @@ const notes = (
 // }
 
 /*
-        background={`url("media/dmx512_universe.jpg")`}
+
         background="#fff"
-        mixin="--slide-color: black" 
-        animationOut={flip.y} 
+        mixin="--slide-color: black"
+        animationOut={flip.y}
         animationIn={flip.y}
 */
 export default (
-  <Slide key={uuid()}>
+  <Slide
+    key={uuid()}
+    background={`url("media/sea-level-rise-by-2050.png") center`}>
     {/*
         luminave={['green']}
       */}
@@ -66,8 +69,12 @@ export default (
     {notes}
 
     <A>
-      <Title>CO2 wasted by LiveJS since the beginning</Title>
-
+      <Fragment order={1}>
+        <Title>
+          CO<sub>2</sub> wasted by{' '}
+          <LivejsLogo height="40vh" colorText="#000"></LivejsLogo> since 2016
+        </Title>
+      </Fragment>
       {/*
       <ImportantLink href=""></ImportantLink>
       */}
@@ -78,8 +85,8 @@ export default (
       </Title>
       */}
 
-      {/* 
-        <Subtitle></Subtitle> 
+      {/*
+        <Subtitle></Subtitle>
       */}
 
       {/*
@@ -96,10 +103,10 @@ export default (
         <Fragment order={5}>
           <li class="no-border"></li>
         </Fragment>
-      </StyledList> 
+      </StyledList>
       */}
 
-      {/* 
+      {/*
       <StyledListLarge>
         <Fragment order={0}>
           <li class="no-border">
@@ -128,21 +135,21 @@ export default (
       </StyledListLarge>
        */}
 
-      {/* 
-      <LargeImage 
+      {/*
+      <LargeImage
           src="media/"
           alt=""
       />
       */}
 
-      {/* 
-        <FitImage src="media/" alt="" /> 
+      {/*
+        <FitImage src="media/" alt="" />
       */}
 
-      {/* 
+      {/*
       <Sequence order={1} steps={2} time={-1}>
         {(index, time, timeline) => {
-          return <SuperVideo 
+          return <SuperVideo
                 //src="media/IMG_0659.m4v#t=93,170"
                 // src="media/JSConfEU_18_Replay_Opener.mp4#t=623"
                 src="media/JSConfEU_LiveJS_Performance_2018.mp4#t=2"

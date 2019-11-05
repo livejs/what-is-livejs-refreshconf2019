@@ -41,6 +41,19 @@ export const HalfLeftBigRightSmall = createStyledMaster(
     }
 `
 
+export const HalfLeftSmallRightBig = createStyledMaster(
+  <Master>
+    <Slot name="A" />
+    <Slot name="B" />
+  </Master>
+)`
+    ${layouts.AB.leftSmallRightBig};
+    [data-slot='A'],
+    [data-slot='B'] {
+        ${vertical.center};
+    }
+`
+
 export const HalfVertical = createStyledMaster(
   <Master>
     <Slot name="A" />

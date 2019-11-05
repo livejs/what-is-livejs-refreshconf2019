@@ -44,6 +44,7 @@ const notes = (
   <Notes>
     <h3>Matt McKegg</h3>
     <ul>
+      <li>co-founder & CTO of a business that does Finacial Audit Software</li>
       <li>
         At LiveJS he does music as DESTROY WITH SCIENCE using his own software
         loop drop. The first version was written in JS, but this one is in rust
@@ -91,7 +92,7 @@ export default (
               </li>
             </Fragment>
             <Fragment order={3}>
-              <li>Synthesizer</li>
+              <li>Synthesizer, Art~Hack Wellington</li>
             </Fragment>
             <Fragment order={4}>
               <li>
