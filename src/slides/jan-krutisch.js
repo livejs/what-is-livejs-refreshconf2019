@@ -1,4 +1,7 @@
 import Config from './config'
+import Fragment from '@dekk/fragment'
+import { default as MaskedImage, FitImage } from '@dekk/image'
+import { Text, Title, Subtitle, Uppercase, Bold, Center, Code } from '@dekk/text'
 import React from 'react'
 import uuid from 'uuid/v4'
 import Notes from '@dekk/speaker-notes'
@@ -12,14 +15,14 @@ import {
   SuperVideo,
   StyledFooter
 } from '../components'
-import {css} from 'styled-components'
+import { css } from 'styled-components'
 import {
   Grid,
   Half,
   HalfVertical,
   HalfVerticalTopSmallBottomBig
 } from '../masters'
-import {ImportantLink} from '../components/links'
+import { ImportantLink } from '../components/links'
 import {
   topCenter,
   LargeImage,
@@ -35,7 +38,7 @@ import {
 import { Columns, ColumnCaption } from '../components/grid'
 
 // const {Slide, A} = Main
-const {Slide, A, B} = HalfVerticalTopSmallBottomBig
+const { Slide, A, B } = HalfVerticalTopSmallBottomBig
 
 const notes = (
   <Notes>

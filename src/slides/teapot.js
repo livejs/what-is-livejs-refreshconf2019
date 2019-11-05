@@ -58,7 +58,7 @@ const notes = (
         animationIn={flip.y}
 */
 export default (
-  <Slide key={uuid()} background={`url("media/push-2.jpg") center`} backgroundPosition='center'>
+  <Slide key={uuid()}>
     {/*
         luminave={['green']}
       */}
@@ -66,21 +66,21 @@ export default (
     {notes}
 
     <A>
-      <Title>improjam</Title>
+      <Title>"teapot"</Title>
       <Fragment order={1}>
-        <Subtitle>Web MIDI sequencer</Subtitle>
+        <Subtitle>aka DOMinator</Subtitle>
       </Fragment>
 
       <Fragment order={2}>
-        <Subtitle>Ableton Push as UI</Subtitle>
+        <Subtitle>aka Bassline 418</Subtitle>
       </Fragment>
 
       <Fragment order={3}>
-        <Subtitle>Based on Electron</Subtitle>
+        <Subtitle>aka SL 1201</Subtitle>
       </Fragment>
 
       <Fragment order={4}>
-        <Subtitle>(because of the Push display)</Subtitle>
+        <Subtitle>MIDI driven Web Audio Synthesizer</Subtitle>
       </Fragment>
 
       {/*

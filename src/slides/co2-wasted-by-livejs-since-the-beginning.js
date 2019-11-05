@@ -58,7 +58,7 @@ const notes = (
         animationIn={flip.y}
 */
 export default (
-  <Slide key={uuid()} background={`url("media/sea-level-rise-by-2050.png")`}>
+  <Slide key={uuid()} background={`url("media/sea-level-rise-by-2050.png") center`}>
     {/*
         luminave={['green']}
       */}

@@ -58,29 +58,13 @@ const notes = (
         animationIn={flip.y}
 */
 export default (
-  <Slide key={uuid()} background={`url("media/push-2.jpg") center`} backgroundPosition='center'>
-    {/*
-        luminave={['green']}
-      */}
-    <Plugins.Data luminave={['']} />
+  <Slide key={uuid()}>
     {notes}
 
     <A>
       <Title>improjam</Title>
       <Fragment order={1}>
-        <Subtitle>Web MIDI sequencer</Subtitle>
-      </Fragment>
-
-      <Fragment order={2}>
-        <Subtitle>Ableton Push as UI</Subtitle>
-      </Fragment>
-
-      <Fragment order={3}>
-        <Subtitle>Based on Electron</Subtitle>
-      </Fragment>
-
-      <Fragment order={4}>
-        <Subtitle>(because of the Push display)</Subtitle>
+        <MaskedImage src='media/improjam-midi-flow.svg' alt='a flow diagram of MIDI data from improjam' />
       </Fragment>
 
       {/*

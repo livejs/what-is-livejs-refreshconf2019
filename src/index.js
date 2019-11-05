@@ -40,6 +40,9 @@ const mySlides = [
 
   'jans-current-stack',
   'improjam',
+  'improjam-2',
+  'teapot',
+  'teapot-2',
 
   'tims-current-stack',
   // maybe a diagram to explain what I'm using? And then a live demo?
@@ -71,8 +74,8 @@ const mySlides = [
   // 'co2-per-person-year-in-groningen',
 
   // show me your hands!
-  'do-you-want-to-party-after-a-long-day-of-talks',
   'play-in-empty-rooms',
+  'do-you-want-to-party-after-a-long-day-of-talks',
 
   'what-can-we-do-about-this',
   'we-as-livejs',
