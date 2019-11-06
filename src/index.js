@@ -26,37 +26,42 @@ const mySlides = [
   'sam-wray',
   'jan-krutisch',
 
+  // TODO: Maybe in 2019: First Workshop related to lights and visuls
   'history-of-livejs',
   'livejs-manifesto',
+
   'what-is-a-live-show',
+  // TODO: What is the connection between the two slides? How can we make the transition?
   'how-to-run-a-show-in-3-phases',
 
-  'refreshconf-lunch-show-explained',
+  'refreshconf-show-explained',
 
-  'jans-current-stack',
+  'jans-stack',
   'improjam',
   'improjam-2',
   'teapot',
   'teapot-2',
 
-  'tims-current-stack',
+  'tims-stack',
+  'tims-stack-diagram',
   // TODO diagram to explain what I'm using? And then a live demo?
 
   // 'dmx512',
-  'dmx512-universe-diagram',
+  // 'dmx512-universe-diagram',
   // 'dmx512-fixture',
   // 'dmx512-universe',
   // dmx512 diagram to explain how this works
   // 'dmx512-controller',
   // 'arduino-leonardo',
-  'webusb-dmx512-controller',
-  'cyberpunk-goggles',
+  // 'webusb-dmx512-controller',
+  // 'cyberpunk-goggles',
   // maybe a diagram?
 
+  'shows-around-the-world',
   'jsconfeu-opening-2019',
   'jsconf-asia-2019',
   'jsconf-budapest-2019',
-  'shows-around-the-world',
+
   'this-is-really-cool-but',
   'co2-wasted-by-livejs-since-the-beginning',
 

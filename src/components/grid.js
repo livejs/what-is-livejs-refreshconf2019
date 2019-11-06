@@ -29,6 +29,8 @@ export const ColumnCaption = styled.div`
   top: -4rem;
   left: 0;
   font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
 
   &.right {
     right: 0;

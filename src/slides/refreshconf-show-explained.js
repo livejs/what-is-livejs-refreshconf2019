@@ -22,7 +22,8 @@ import {
   topCenter,
   LargeImage,
   MediumImage,
-  SmallImage
+  SmallImage,
+  VerySmallImage
 } from '../components/images'
 import {fade, flip, cube} from '@dekk/animation'
 import {
@@ -36,19 +37,16 @@ const {Slide, A} = Main
 
 const notes = (
   <Notes>
-    <p />
+    <h3>RefreshConf Lunch Show explained</h3>
+    <ul>
+      <li>
+        Now that we know the 3 phase process of a live show, let's see how an
+        actual show works in detail. We will explain what we were doing before
+        we started this talk.
+      </li>
+    </ul>
   </Notes>
 )
-
-// const code = `npm start`
-
-// const ranges = []
-
-// const codeOptions = {
-//   lineNumbers: false,
-//   mode: 'bash',
-//   theme: 'dracula'
-// }
 
 /*
         background={`url("media/dmx512_universe.jpg")`}
@@ -59,14 +57,17 @@ const notes = (
 */
 export default (
   <Slide key={uuid()}>
-    {/*
-        luminave={['green']}
-      */}
     <Plugins.Data luminave={['']} />
     {notes}
 
     <A>
-      <Title>What is needed to run a show?</Title>
+      <Title>
+        &quot;
+        <VerySmallImage
+          src="media/refresh_conf.png"
+          alt="RefreshConf"></VerySmallImage>{' '}
+        Show&quot; explained
+      </Title>
 
       {/*
       <ImportantLink href=""></ImportantLink>

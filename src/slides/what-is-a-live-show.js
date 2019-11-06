@@ -36,19 +36,15 @@ const {Slide, A} = Main
 
 const notes = (
   <Notes>
-    <p />
+    <h3>What is a live show</h3>
+    <ul>
+      <li>
+        As we love to do live shows, we put a strong focus on that for 2019, but
+        what exactly is a live show?
+      </li>
+    </ul>
   </Notes>
 )
-
-// const code = `npm start`
-
-// const ranges = []
-
-// const codeOptions = {
-//   lineNumbers: false,
-//   mode: 'bash',
-//   theme: 'dracula'
-// }
 
 /*
         background={`url("media/dmx512_universe.jpg")`}

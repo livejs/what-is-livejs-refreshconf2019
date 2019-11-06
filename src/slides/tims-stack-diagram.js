@@ -36,19 +36,49 @@ const {Slide, A} = Main
 
 const notes = (
   <Notes>
-    <p />
+    <h3>Tims Stack: Diagram</h3>
+    <ul>
+      <li>
+        First of all we take a look at the computer that I'm using to run both
+        luminave (lights) and modV (visuals). It must be a powerful machine to
+        be able to use both applications at the same time and ensure that we
+        always have 60 fps for smooth visuals.
+      </li>
+      <li>
+        Attachted over USB is an Audio Interface that gets the audio signal
+        directly from Jan. The signal is then used in modV to generate visuals
+        that are in sync with the music because of live audio analysis.
+      </li>
+      <li>
+        The visuals are then reduced in modV to only get a few colors out of
+        them. Those colors are send over WebSocket to luminave, where luminave
+        can use that information to control lights.
+      </li>
+
+      <li>
+        luminave knows which lights exist and you can map the different colors
+        that modV is providing to different lights. So whenever modV is giving
+        us data, the lights are also updated.
+      </li>
+      <li>
+        The lights get their data from the WebUSB DMX512 controller (which you
+        can build yourself using an article that I wrote) which is working
+        directly in the browser by leveraging WebUSB. It can transform the
+        colors into DMX512 so that the lights understand it.
+      </li>
+      <li>
+        Another consumer of the modV colors are these cyberpunk goggles. They
+        contain a LED ring from Adafruit called NeoPixel and are updated over
+        WiFi, also with a WebSocket connetion.
+      </li>
+      <li>
+        In order to not use the UI of the software, there is also a MIDI
+        controller in use that can control both luminave and modV at the same
+        time using WebMIDI.
+      </li>
+    </ul>
   </Notes>
 )
-
-// const code = `npm start`
-
-// const ranges = []
-
-// const codeOptions = {
-//   lineNumbers: false,
-//   mode: 'bash',
-//   theme: 'dracula'
-// }
 
 /*
         background={`url("media/dmx512_universe.jpg")`}
@@ -59,14 +89,13 @@ const notes = (
 */
 export default (
   <Slide key={uuid()}>
-    {/*
-        luminave={['green']}
-      */}
     <Plugins.Data luminave={['']} />
     {notes}
 
     <A>
-      <Title>Tims current stack</Title>
+      <LargeImage
+        src="media/tims_stack_vj_lj_2019.svg"
+        alt="Tims Stack VJ LJ 2019"></LargeImage>
 
       {/*
       <ImportantLink href=""></ImportantLink>

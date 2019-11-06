@@ -44,7 +44,7 @@ const notes = (
       </li>
       <li>Supporting each other and the community</li>
       <li>Experimenting with new technology we are enthusiastic about</li>
-      <li>Live Shows should be in our focus → music, projections, hardware</li>
+      <li>Live Shows should be in our focus</li>
     </ol>
     <p />
   </Notes>

@@ -36,19 +36,16 @@ const {Slide, A} = Main
 
 const notes = (
   <Notes>
-    <p />
+    <h3>Tims Stack</h3>
+    <ul>
+      <li>
+        Now that we know where the music is coming from we focus on the stack
+        that is used by Tim to generate visuals and control lights in sync with
+        the visuals
+      </li>
+    </ul>
   </Notes>
 )
-
-// const code = `npm start`
-
-// const ranges = []
-
-// const codeOptions = {
-//   lineNumbers: false,
-//   mode: 'bash',
-//   theme: 'dracula'
-// }
 
 /*
         background={`url("media/dmx512_universe.jpg")`}
@@ -59,14 +56,13 @@ const notes = (
 */
 export default (
   <Slide key={uuid()}>
-    {/*
-        luminave={['green']}
-      */}
     <Plugins.Data luminave={['']} />
     {notes}
 
     <A>
-      <Title>&quot;RefreshConf Lunch Show&quot; explained</Title>
+      <Title>Tims stack</Title>
+
+      <Subtitle>Visual 🎆 & Light ⚡️</Subtitle>
 
       {/*
       <ImportantLink href=""></ImportantLink>

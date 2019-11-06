@@ -36,20 +36,9 @@ const {Slide, A} = Main
 
 const notes = (
   <Notes>
-    <p />
+    <h3>Jans Stack</h3>
   </Notes>
 )
-
-// const code = `npm start`
-
-// const ranges = []
-
-// const codeOptions = {
-//   lineNumbers: false,
-//   mode: 'bash',
-//   theme: 'dracula'
-// }
-
 /*
         background={`url("media/dmx512_universe.jpg")`}
         background="#fff"
@@ -66,7 +55,8 @@ export default (
     {notes}
 
     <A>
-      <Title>Jans current stack</Title>
+      <Title>Jans stack</Title>
+      <Subtitle>Music 🔊</Subtitle>
 
       {/*
       <ImportantLink href=""></ImportantLink>

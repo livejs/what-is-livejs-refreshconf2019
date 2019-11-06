@@ -25,7 +25,7 @@ export const StyledList = styled.ul`
     padding-bottom: 0.1em;
     /* padding-right: 0.5em; */
     width: 100%;
-    /* border-bottom: 1px solid var(--theme-primary-dark); */
+    border-bottom: 1px solid var(--theme-primary-dark);
 
     &:before {
       content: '';

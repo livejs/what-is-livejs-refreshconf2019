@@ -114,7 +114,7 @@ export default (
                 <li>How many LiveJS members?</li>
               </Fragment>
               <Fragment order={5}>
-                <li>
+                <li class="no-border">
                   <ImportantLink href="https://www.notion.so/livejs/Technical-Requirements-f69bd653e26d445d8eb37c9396b884ce">
                     Rider
                   </ImportantLink>{' '}
@@ -136,7 +136,9 @@ export default (
                 <li>Plan Travel & Accomendation</li>
               </Fragment>
               <Fragment order={10}>
-                <li>Custom visuals, patch lights, update software</li>
+                <li class="no-border">
+                  Custom visuals, patch lights, update software
+                </li>
               </Fragment>
             </StyledList>
           </Fragment>
@@ -153,10 +155,10 @@ export default (
                 <li>Handle guest artists</li>
               </Fragment>
               <Fragment order={20}>
-                <li>Run the show / talk</li>
+                <li>Run the show</li>
               </Fragment>
               <Fragment order={21}>
-                <li>Debriefing & documentation</li>
+                <li class="no-border">Debriefing & documentation</li>
               </Fragment>
             </StyledList>
           </Fragment>

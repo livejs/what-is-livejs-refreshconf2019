@@ -48,6 +48,10 @@ export const SmallImage = styled.img`
   height: 40vh;
 `
 
+export const VerySmallImage = styled.img`
+  height: 15vh;
+`
+
 export const MediumImage = styled.img`
   height: 50vh;
 `
