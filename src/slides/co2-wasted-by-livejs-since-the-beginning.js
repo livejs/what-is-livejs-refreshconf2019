@@ -37,7 +37,11 @@ const {Slide, A} = Main
 
 const notes = (
   <Notes>
-    <p />
+    New Projections for 2050 by ClimateCentral<p/>
+    I'll tweet out <a href="https://coastal.climatecentral.org">the link</a> to the interactive map<p/>
+    (Normal high tide, moderate emission cuts, medium luck, mid range projections)<p/>
+    What does this have to do with live:js?<p/>
+    Well...<p/>
   </Notes>
 )
 

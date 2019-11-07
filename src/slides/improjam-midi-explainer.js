@@ -36,7 +36,10 @@ const { Slide, A } = Main
 
 const notes = (
   <Notes>
-    Web MIDI<p />
+    Version 1.0 from 1983, Version 2.0 currently in the works.<p/>
+    Data Bytes<p />
+    Data is 7 bits, because 127 steps should be enough for everyone<p />
+    (Can be upgraded to 14 bits for many things)<p />
   </Notes>
 )
 
@@ -58,29 +61,19 @@ const notes = (
         animationIn={flip.y}
 */
 export default (
-  <Slide key={uuid()} background={`url("media/push-2.jpg") center`} backgroundPosition='center'>
-    {/*
-        luminave={['green']}
-      */}
-    <Plugins.Data luminave={['']} />
+  <Slide key={uuid()}>
     {notes}
 
     <A>
-      <Title>improjam</Title>
+      <Title>MIDI?</Title>
       <Fragment order={1}>
-        <Subtitle>Web MIDI sequencer</Subtitle>
+        <Subtitle>Simple serial protocol</Subtitle>
       </Fragment>
-
       <Fragment order={2}>
-        <Subtitle>Ableton Push as UI</Subtitle>
+        <Code>[144, 60, 127]</Code>
       </Fragment>
-
       <Fragment order={3}>
-        <Subtitle>Based on Electron</Subtitle>
-      </Fragment>
-
-      <Fragment order={4}>
-        <Subtitle>(because of the Push display)</Subtitle>
+        <Code>[Note On + Channel 0, Mid C, Maximum Velocity]</Code>
       </Fragment>
 
       {/*
