@@ -15,27 +15,34 @@ import LuminaveButton from './components/luminaveButton'
 const mySlides = [
   'cover',
 
+  // tim
   'livejs-name-explained',
 
+  // tim
   'collective-of-digital-artists',
 
+  // jan
   'ruth-john',
   'tim-pietrusky',
   'martin-schuhfuss',
+  // tim
   'matt-mckegg',
   'sam-wray',
   'jan-krutisch',
 
   // TODO: Maybe in 2019: First Workshop related to lights and visuls
+  // jan
   'history-of-livejs',
   'livejs-manifesto',
 
+  // tim
   'what-is-a-live-show',
   // TODO: What is the connection between the two slides? How can we make the transition?
   'how-to-run-a-show-in-3-phases',
 
   'refreshconf-show-explained',
 
+  // jan
   'jans-stack',
   'improjam',
   'improjam-midi-explainer',
@@ -45,6 +52,7 @@ const mySlides = [
   'teapot',
   'teapot-2',
 
+  // tim
   'tims-stack',
   'tims-stack-diagram',
 
@@ -53,6 +61,7 @@ const mySlides = [
   'jsconfeu-opening-2019',
   'jsconf-asia-2019',
 
+  // jan
   'this-is-really-cool-but',
   'co2-wasted-by-livejs-since-the-beginning',
 
@@ -65,23 +74,31 @@ const mySlides = [
   // show me your hands!
   'play-in-empty-rooms',
 
+  // tim
   'what-can-we-do-about-this',
   'we-as-livejs',
 
+  // jan
   'what-is-jan-doing',
   'extinction-rebellion',
 
+  // tim
   'what-is-tim-doing',
   'thorium-spaceship-simulator',
 
+  // together?
   'what-can-you-do',
 
+  // jan
   'art-is-giving-back-positive-energy-into-the-community',
+
+  // tim
   'everything-is-connected',
   // It’s not about that we can do music and control lights live to perform on stage,
   // but how we can do it, the technology behind it, the context so
   // that you can do this too, to show the possibility, to extend your horizons
 
+  // together
   'thank-you'
 ]
 
