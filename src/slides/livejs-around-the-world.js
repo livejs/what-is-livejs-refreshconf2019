@@ -22,7 +22,8 @@ import {
   topCenter,
   LargeImage,
   MediumImage,
-  SmallImage
+  SmallImage,
+  LivejsLogo
 } from '../components/images'
 import {fade, flip, cube} from '@dekk/animation'
 import {
@@ -30,15 +31,26 @@ import {
   StyledList,
   StyledOrderedListLarge
 } from '../components/list'
+import {Columns, ColumnCaption} from '../components/grid'
 
 const {Slide, A} = Main
 // const {Slide, A, B} = Half
 
 const notes = (
   <Notes>
-    <h3>All of this is really cool, but</h3>
+    <p />
   </Notes>
 )
+
+// const code = `npm start`
+
+// const ranges = []
+
+// const codeOptions = {
+//   lineNumbers: false,
+//   mode: 'bash',
+//   theme: 'dracula'
+// }
 
 /*
         background={`url("media/dmx512_universe.jpg")`}
@@ -57,8 +69,8 @@ export default (
 
     <A>
       <Title>
-        All of this is <br />
-        really cool, but...
+        <LivejsLogo height="60vh" colorText="#000"></LivejsLogo> shows around
+        the world
       </Title>
 
       {/*

@@ -36,19 +36,25 @@ const {Slide, A} = Main
 
 const notes = (
   <Notes>
-    <p />
+    <h3>JSConf Asia 2019</h3>
+    <ul>
+      <li>
+        Another hightlight was our show with Ruth, Sam, Matt, Jan and myself for
+        JSConf Asia in Singapore
+      </li>
+      <li>
+        The venue was inbettween 4 buldings that are the universy of fine arts
+        with a canopy above us, and no walls. The temperature & humiditiy was
+        super high and the hot wind was blowing even when it was dark. We had a
+        massive LED wall behind us.
+      </li>
+      <li>
+        After 3 liveJS performances, we teamed up with guest artists
+        spontaneously and it was such an awesome time.
+      </li>
+    </ul>
   </Notes>
 )
-
-// const code = `npm start`
-
-// const ranges = []
-
-// const codeOptions = {
-//   lineNumbers: false,
-//   mode: 'bash',
-//   theme: 'dracula'
-// }
 
 /*
         background={`url("media/dmx512_universe.jpg")`}
@@ -58,7 +64,10 @@ const notes = (
         animationIn={flip.y}
 */
 export default (
-  <Slide key={uuid()}>
+  <Slide
+    key={uuid()}
+    background={`url("media/jsconfasia_2019_1.jpg")`}
+    mixin="--slide-color: white">
     {/*
         luminave={['green']}
       */}
@@ -66,7 +75,9 @@ export default (
     {notes}
 
     <A>
-      <Title>JSConf Asia 2019</Title>
+      <StyledFooter>
+        <Subtitle>JSConf Asia 2019</Subtitle>
+      </StyledFooter>
 
       {/*
       <ImportantLink href=""></ImportantLink>

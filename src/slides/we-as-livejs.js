@@ -39,10 +39,27 @@ const notes = (
   <Notes>
     <h3>We as LiveJS?</h3>
     <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
+      <li>
+        Workshops to empower local communities to do shows themselves and
+        without us. We share everything we know and learned over the years to
+        create a new generation of artists that don't know yet what is inside
+        them.
+      </li>
+      <li>
+        We give talks to give context and spread creativity to everyone.
+        Hopefully they will then go to a workshop by us or build something
+        completly else, but with the courage that you can use technology for
+        anything you want.
+      </li>
+      <li>
+        We help conferences & events to organize a Call for Artists to get new
+        talent into spaces they never were before.
+      </li>
+      <li>
+        We run LiveJS Community on Slack, if you want to talk with others that
+        are interested in hardware, music, visuals, light or any technology, you
+        are happy to join us.
+      </li>
     </ul>
   </Notes>
 )
@@ -81,7 +98,11 @@ export default (
           <li>Call for Artists</li>
         </Fragment>
         <Fragment order={5}>
-          <li class="no-border">LiveJS Community on Slack</li>
+          <li class="no-border">
+            <ImportantLink href="https://join.slack.com/t/live-js/shared_invite/enQtNjI3ODEwMzg2MzU5LTA2NDgxZWVlMDk1OTc2ZTgxOWU5ZGVlZTQ0Y2Y1NDZjZjZkMGE3ZmY3NTU0MWI5ZTg5ZDgyMWM5ZDZlY2IxNzA">
+              LiveJS Community on Slack
+            </ImportantLink>
+          </li>
         </Fragment>
       </StyledOrderedListLarge>
     </B>

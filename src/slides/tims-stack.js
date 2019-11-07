@@ -41,7 +41,7 @@ const notes = (
       <li>
         Now that we know where the music is coming from we focus on the stack
         that is used by Tim to generate visuals and control lights in sync with
-        the visuals
+        the visuals.
       </li>
     </ul>
   </Notes>

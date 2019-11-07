@@ -30,13 +30,24 @@ import {
   StyledList,
   StyledOrderedListLarge
 } from '../components/list'
+import {Columns, ColumnCaption} from '../components/grid'
 
 const {Slide, A} = Main
 // const {Slide, A, B} = Half
 
 const notes = (
   <Notes>
-    <h3>All of this is really cool, but</h3>
+    <h3>Everything is connected</h3>
+    <ul>
+      <li>
+        Everything we do has an influence on something else, if you do good,
+        other good things will happen.
+      </li>
+      <li>
+        A small inspiration today, can be the thing that will change the future
+        tomorrow.
+      </li>
+    </ul>
   </Notes>
 )
 
@@ -56,10 +67,7 @@ export default (
     {notes}
 
     <A>
-      <Title>
-        All of this is <br />
-        really cool, but...
-      </Title>
+      <Title>Everything is connected</Title>
 
       {/*
       <ImportantLink href=""></ImportantLink>

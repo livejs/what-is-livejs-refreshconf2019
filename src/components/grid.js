@@ -36,4 +36,14 @@ export const ColumnCaption = styled.div`
     right: 0;
     left: initial;
   }
+
+  &.small {
+    font-weight: normal;
+    text-transform: none;
+    font-size: 2.25rem;
+  }
+
+  &.center {
+    top: 0;
+  }
 `

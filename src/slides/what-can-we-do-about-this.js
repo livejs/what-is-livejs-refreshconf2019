@@ -36,19 +36,12 @@ const {Slide, A} = Main
 
 const notes = (
   <Notes>
-    <p />
+    <h3>What can we do about this?</h3>
+    <ul>
+      <li>We have thought about this a lot</li>
+    </ul>
   </Notes>
 )
-
-// const code = `npm start`
-
-// const ranges = []
-
-// const codeOptions = {
-//   lineNumbers: false,
-//   mode: 'bash',
-//   theme: 'dracula'
-// }
 
 /*
         background={`url("media/dmx512_universe.jpg")`}

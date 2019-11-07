@@ -44,23 +44,11 @@ const mySlides = [
 
   'tims-stack',
   'tims-stack-diagram',
-  // TODO diagram to explain what I'm using? And then a live demo?
 
-  // 'dmx512',
-  // 'dmx512-universe-diagram',
-  // 'dmx512-fixture',
-  // 'dmx512-universe',
-  // dmx512 diagram to explain how this works
-  // 'dmx512-controller',
-  // 'arduino-leonardo',
-  // 'webusb-dmx512-controller',
-  // 'cyberpunk-goggles',
-  // maybe a diagram?
-
+  'livejs-around-the-world',
   'shows-around-the-world',
   'jsconfeu-opening-2019',
   'jsconf-asia-2019',
-  'jsconf-budapest-2019',
 
   'this-is-really-cool-but',
   'co2-wasted-by-livejs-since-the-beginning',
@@ -73,19 +61,10 @@ const mySlides = [
   'co2-per-person-year-in-groningen',
 
   // show me your hands!
-  // TODO: The question should be a fragment
   'play-in-empty-rooms',
-  // 'do-you-want-to-party-after-a-long-day-of-talks',
 
   'what-can-we-do-about-this',
   'we-as-livejs',
-  /*
- Empower local communities to do shows themselves by doing workshops
-Call for artists at Conferences
-Give talks to empower creativity and to give context
-Online community on Slack
-
-  */
 
   'what-is-jan-doing',
   'extinction-rebellion',
@@ -96,6 +75,7 @@ Online community on Slack
   'what-can-you-do',
 
   'art-is-giving-back-positive-energy-into-the-community',
+  'everything-is-connected',
   // It’s not about that we can do music and control lights live to perform on stage,
   // but how we can do it, the technology behind it, the context so
   // that you can do this too, to show the possibility, to extend your horizons

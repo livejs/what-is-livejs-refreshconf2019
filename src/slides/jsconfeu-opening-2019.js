@@ -32,7 +32,19 @@ const {Slide, A} = Main
 
 const notes = (
   <Notes>
-    <p />
+    <h3>JSConf EU 2019</h3>
+    <ul>
+      <li>
+        For this years JSConf EU the whole crew was in Berlin to do the full
+        opening of the conference
+      </li>
+      <li>
+        We had a lot of fun, but also many many problems. One of them you can
+        actually see in the video: The visuals on the big screen that covers the
+        whole stage crashed the second before we started. When you listen
+        cloesly you can even hear Matt laugh because of this.
+      </li>
+    </ul>
   </Notes>
 )
 
@@ -44,7 +56,7 @@ const notes = (
         animationIn={flip.y}
 */
 export default (
-  <Slide key={uuid()} background="#000">
+  <Slide key={uuid()} background="#000" mixin="--slide-color: white">
     {/*
         luminave={['green']}
       */}
@@ -65,6 +77,7 @@ export default (
       </Sequence>
 
       <StyledFooter>
+        <Subtitle>JSConf EU 2019</Subtitle>
         <ImportantLink href="https://www.youtube.com/watch?v=o1rzsna263c&t=1222">
           youtube.com/watch?v=o1rzsna263c&t=1222
         </ImportantLink>

@@ -38,19 +38,34 @@ const {Slide, A, B} = HalfVertical
 
 const notes = (
   <Notes>
-    <p />
+    <h3>What is Tim doing?</h3>
+    <ul>
+      <li>
+        Last year I was approached by a teacher from Utah (USA) that is a flight
+        instructor for a space ship simulator programm that they are running in
+        their school. They found an article of me online where I explained how
+        you can build a low-cost DMX512 controller yourself and wanted to help
+        them to control the lights in the simulator with my software luminave.
+      </li>
+      <li>
+        Together with a former studend they created an open source software
+        called Thorium which can be used to simulate a space ship. The
+        simulators are part of the usual school programm to teach children
+        Science, technology, engineering, and mathematics in a playful
+        environment where they actually don't even know that they are learning
+        something.
+      </li>
+      <li>
+        In the past they had differnt physical controls for every simulator and
+        had to activate the lights manually, but now this is all triggered
+        automatically when something is happening in the mission, for example if
+        an enemy vessel is atacking you, the lights change to red if you go to
+        red alert.
+      </li>
+      <li>But let's see for yourself</li>
+    </ul>
   </Notes>
 )
-
-// const code = `npm start`
-
-// const ranges = []
-
-// const codeOptions = {
-//   lineNumbers: false,
-//   mode: 'bash',
-//   theme: 'dracula'
-// }
 
 /*
         background={`url("media/dmx512_universe.jpg")`}
@@ -71,22 +86,47 @@ export default (
       <Title>
         What is <RainbowText text="Tim"></RainbowText> doing?
       </Title>
+    </A>
 
-      {/*
+    <B>
+      <Columns amount="2">
+        <Fragment order={1}>
+          <div>
+            <Subtitle>
+              Run the lights in <TextMarker>starship simulators</TextMarker> for
+              schools in the US
+            </Subtitle>
+          </div>
+        </Fragment>
+
+        <Fragment order={1}>
+          <div>
+            <SmallImage src="media/thorium.svg" alt="Thorium logo" />
+
+            <br />
+            <ImportantLink src="https://thoriumsim.com/">
+              thoriumsim.com
+            </ImportantLink>
+          </div>
+        </Fragment>
+      </Columns>
+    </B>
+
+    {/*
       <ImportantLink href=""></ImportantLink>
       */}
 
-      {/*
+    {/*
       <Title>
         <TextMarker>this.stage</TextMarker>
       </Title>
       */}
 
-      {/* 
+    {/* 
         <Subtitle></Subtitle> 
       */}
 
-      {/*
+    {/*
       <StyledList>
         <Fragment order={2}>
           <li></li>
@@ -103,7 +143,7 @@ export default (
       </StyledList> 
       */}
 
-      {/* 
+    {/* 
       <StyledListLarge>
         <Fragment order={0}>
           <li class="no-border">
@@ -132,18 +172,18 @@ export default (
       </StyledListLarge>
        */}
 
-      {/* 
+    {/* 
       <LargeImage 
           src="media/"
           alt=""
       />
       */}
 
-      {/* 
+    {/* 
         <FitImage src="media/" alt="" /> 
       */}
 
-      {/* 
+    {/* 
       <Sequence order={1} steps={2} time={-1}>
         {(index, time, timeline) => {
           return <SuperVideo 
@@ -156,7 +196,7 @@ export default (
       </Sequence>
       */}
 
-      {/*
+    {/*
        <YouTube videoId="GiTkwz9AKhM" start={93}>
         {props => {
           return (
@@ -172,7 +212,7 @@ export default (
       </YouTube>
       */}
 
-      {/*
+    {/*
       <DmxChannels channels="6" width="90%" height="10em">
         <Channel background="" label="Red" value="0" className="inactive">
         </Channel>
@@ -194,39 +234,14 @@ export default (
       </DmxChannels>
     */}
 
-      {/* <StyledFooter>
+    {/* <StyledFooter>
         <ImportantLink href="https://www.youtube.com/watch?v=RsqeSfyhzdw">
           youtube.com/watch?v=RsqeSfyhzdw
         </ImportantLink>
       </StyledFooter> */}
 
-      {/* <Code2 ranges={ranges} options={codeOptions}>
+    {/* <Code2 ranges={ranges} options={codeOptions}>
             {code}
           </Code2> */}
-    </A>
-
-    <B>
-      <Columns amount="2">
-        <Fragment order={1}>
-          <div>
-            <Subtitle>
-              Run the lights in <TextMarker>starship simulators</TextMarker> for
-              schools in the US
-            </Subtitle>
-          </div>
-        </Fragment>
-
-        <Fragment order={2}>
-          <div>
-            <SmallImage src="media/thorium.svg" alt="Thorium logo" />
-
-            <br />
-            <ImportantLink src="https://thoriumsim.com/">
-              thoriumsim.com
-            </ImportantLink>
-          </div>
-        </Fragment>
-      </Columns>
-    </B>
   </Slide>
 )

@@ -76,6 +76,7 @@ const notes = (
         controller in use that can control both luminave and modV at the same
         time using WebMIDI.
       </li>
+      <li>DEMO</li>
     </ul>
   </Notes>
 )
