@@ -67,7 +67,7 @@ export default (
         <div class="center">
           <ColumnCaption className="small center">
             <ImportantLink href="https://twitter.com/livejs_network">
-              twitter.com/LiveJS_network
+              twitter.com/livejs_network
             </ImportantLink>
           </ColumnCaption>
           <br />

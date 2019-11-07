@@ -18,7 +18,7 @@ const mySlides = [
   'livejs-name-explained',
 
   'collective-of-digital-artists',
-  // TODO: Update every person with their role at livejs, what they love and how they make money
+
   'ruth-john',
   'tim-pietrusky',
   'martin-schuhfuss',
@@ -60,7 +60,6 @@ const mySlides = [
 
   'tons-of-co2',
   'personal-budget',
-  // TODO: I'm going to try to find numbers for this, if not, just leave it out
   'co2-per-person-year-in-groningen',
 
   // show me your hands!

@@ -27,7 +27,8 @@ import {
   topCenter,
   LargeImage,
   MediumImage,
-  SmallImage
+  SmallImage,
+  LivejsLogo
 } from '../components/images'
 import {fade, flip, cube} from '@dekk/animation'
 import {
@@ -45,11 +46,11 @@ const notes = (
     <h3>Ruth John</h3>
     <ul>
       <li>At LiveJS she does visuals as rumyra using her own software Vizra</li>
-      <li>Runs the Generative Art Podcast together with Tim Holman</li>
       <li>
-        Writes documentation and demos for MDN for topics such as the Web Audio
-        API
+        She is a creative developer (freelance), teacher, speaker and writes
+        documentation and demos for MDN for topics such as the Web Audio API
       </li>
+      <li>Runs the Generative Art Podcast together with Tim Holman</li>
     </ul>
   </Notes>
 )
@@ -74,7 +75,10 @@ export default (
         <div>
           <StyledList>
             <Fragment order={2}>
-              <li>
+              <li class="space-bottom">
+                <span class="emoji">
+                  <LivejsLogo height="7vh" colorText="#000"></LivejsLogo>
+                </span>
                 Visuals as rumyra with{' '}
                 <ImportantLink href="https://github.com/livejs/VizraVid">
                   Vizra
@@ -82,17 +86,19 @@ export default (
               </li>
             </Fragment>
             <Fragment order={3}>
-              <li>
-                <ImportantLink href="https://twitter.com/GenArtPodcast">
-                  Generative Art Podcast
+              <li class="space-bottom">
+                <span class="emoji">💵</span>
+                Creative Developer, Teacher, Speaker, Writer for{'  '}
+                <ImportantLink href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Using_Web_Audio_API">
+                  MDN
                 </ImportantLink>
               </li>
             </Fragment>
             <Fragment order={4}>
-              <li>
-                Writer for{'  '}
-                <ImportantLink href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Using_Web_Audio_API">
-                  MDN
+              <li class="space-bottom no-border">
+                <span class="emoji">❤️</span>
+                <ImportantLink href="https://twitter.com/GenArtPodcast">
+                  Generative Art Podcast
                 </ImportantLink>
               </li>
             </Fragment>

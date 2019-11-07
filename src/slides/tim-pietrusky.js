@@ -27,7 +27,8 @@ import {
   topCenter,
   LargeImage,
   MediumImage,
-  SmallImage
+  SmallImage,
+  LivejsLogo
 } from '../components/images'
 import {fade, flip, cube} from '@dekk/animation'
 import {
@@ -50,6 +51,7 @@ const notes = (
         GitHub Organisation that hosts all of his open source projects related
         to visuald & lights.
       </li>
+      <li>Works as CTO in the company Synoa that he co-founded</li>
       <li>
         Creates LED art that works in combination with the visuals from modV
       </li>
@@ -74,14 +76,17 @@ export default (
     </A>
 
     <B>
-      <Columns amount="2">
+      <Columns amount="2" gap="3.5em">
         <div>
           <FitImage src="media/tim_pietrusky.jpg" alt=""></FitImage>
         </div>
         <div>
           <StyledList>
             <Fragment order={2}>
-              <li>
+              <li class="space-bottom">
+                <span class="emoji">
+                  <LivejsLogo height="7vh" colorText="#000"></LivejsLogo>
+                </span>
                 Visuals with{' '}
                 <ImportantLink href="https://modv.js.org">modV</ImportantLink> &
                 Lights with{' '}
@@ -92,10 +97,15 @@ export default (
               </li>
             </Fragment>
             <Fragment order={3}>
-              <li>LED art</li>
+              <li class="space-bottom">
+                <span class="emoji">💵</span>
+                Co-Founder & CTO at Synoa
+              </li>
             </Fragment>
             <Fragment order={4}>
-              <li>
+              <li class="space-bottom no-border">
+                <span class="emoji">❤️</span>
+                LED Art,
                 <ImportantLink href="https://github.com/NERDDISCO/luminave-thorium">
                   Space Ship Simulator
                 </ImportantLink>{' '}

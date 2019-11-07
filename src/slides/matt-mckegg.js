@@ -27,7 +27,8 @@ import {
   topCenter,
   LargeImage,
   MediumImage,
-  SmallImage
+  SmallImage,
+  LivejsLogo
 } from '../components/images'
 import {fade, flip, cube} from '@dekk/animation'
 import {
@@ -44,12 +45,12 @@ const notes = (
   <Notes>
     <h3>Matt McKegg</h3>
     <ul>
-      <li>co-founder & CTO of a business that does Finacial Audit Software</li>
       <li>
         At LiveJS he does music as DESTROY WITH SCIENCE using his own software
         loop drop. The first version was written in JS, but this one is in rust
         as the Web Audio API is not very accurate for what he is after.
       </li>
+      <li>co-founder & CTO of a business that does Finacial Audit Software</li>
       <li>
         Besides using loop drop he is in love with syntesizer and has a lot of
         them. He always travels with a bunch of them in a big suitcase.
@@ -76,14 +77,17 @@ export default (
     </A>
 
     <B>
-      <Columns amount="2">
+      <Columns amount="2" gap="3.5em">
         <div>
           <FitImage src="media/matt_mckegg.jpg" alt=""></FitImage>
         </div>
         <div>
           <StyledList>
             <Fragment order={2}>
-              <li>
+              <li class="space-bottom">
+                <span class="emoji">
+                  <LivejsLogo height="7vh" colorText="#000"></LivejsLogo>
+                </span>
                 Music with{' '}
                 <ImportantLink href="https://github.com/mmckegg/rust-loop-drop">
                   loop drop
@@ -92,10 +96,15 @@ export default (
               </li>
             </Fragment>
             <Fragment order={3}>
-              <li>Synthesizer, Art~Hack Wellington</li>
+              <li class="space-bottom">
+                <span class="emoji">💵</span>
+                Co-founder & CTO of a business that does Finacial Audit Software
+              </li>
             </Fragment>
             <Fragment order={4}>
-              <li>
+              <li class="space-bottom no-border">
+                <span class="emoji">❤️</span>
+                Synthesizer, Art~Hack Wellington,{' '}
                 <ImportantLink href="https://www.scuttlebutt.nz/">
                   Scuttlebutt
                 </ImportantLink>{' '}

@@ -45,6 +45,15 @@ export const StyledList = styled.ul`
     &.space-top {
       margin-top: 0.5em;
     }
+
+    &.space-bottom {
+      padding-bottom: 0.25em;
+    }
+
+    > .emoji {
+      position: absolute;
+      left: -1.45em;
+    }
   }
   &.right li {
     margin: 0.25em 0 0.25em 1.5em;

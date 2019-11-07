@@ -27,7 +27,8 @@ import {
   topCenter,
   LargeImage,
   MediumImage,
-  SmallImage
+  SmallImage,
+  LivejsLogo
 } from '../components/images'
 import {fade, flip, cube} from '@dekk/animation'
 import {
@@ -44,13 +45,13 @@ const notes = (
   <Notes>
     <h3>Martin Schuhfuss</h3>
     <ul>
-      <li>Creative Developer at Ubilabs</li>
       <li>
         At LiveJS he does lights as usefulthink using his own software
         fivetwelve. This is also the base package that Tim is using to control
         lights over DMX512. Martin also created an app that lets you control
         lights using CSS.
       </li>
+      <li>Creative Developer at Ubilabs</li>
       <li>Creates LED art</li>
       <li>Recreates everything that comes into his mind using hardware.</li>
     </ul>
@@ -70,14 +71,17 @@ export default (
     </A>
 
     <B>
-      <Columns amount="2">
+      <Columns amount="2" gap="3.5em">
         <div>
           <FitImage src="media/martin_schuhfuss.jpg" alt=""></FitImage>
         </div>
         <div>
           <StyledList>
             <Fragment order={2}>
-              <li>
+              <li class="space-bottom">
+                <span class="emoji">
+                  <LivejsLogo height="7vh" colorText="#000"></LivejsLogo>
+                </span>
                 Lights with{' '}
                 <ImportantLink href="https://github.com/beyondscreen/fivetwelve">
                   fivetwelve
@@ -86,10 +90,15 @@ export default (
               </li>
             </Fragment>
             <Fragment order={3}>
-              <li>LED art</li>
+              <li class="space-bottom">
+                <span class="emoji">💵</span>
+                Creative Developer at Ubilabs
+              </li>
             </Fragment>
             <Fragment order={4}>
-              <li>Hardware hacking</li>
+              <li class="space-bottom no-border">
+                <span class="emoji">❤️</span>LED art, Hardware hacking
+              </li>
             </Fragment>
           </StyledList>
         </div>

@@ -27,7 +27,8 @@ import {
   topCenter,
   LargeImage,
   MediumImage,
-  SmallImage
+  SmallImage,
+  LivejsLogo
 } from '../components/images'
 import {fade, flip, cube} from '@dekk/animation'
 import {
@@ -44,11 +45,11 @@ const notes = (
   <Notes>
     <h3>Sam Wray</h3>
     <ul>
-      <li>Experience Technologist at publicis•poke</li>
       <li>
         At LiveJS he does music as 2xAA using Game Boys and visuals as NOSIGNAL
         using his own software modV.
       </li>
+      <li>Experience Technologist at publicis•poke</li>
       <li>
         Runs the chiptune community μCollective and organizes chiptune shows
       </li>
@@ -70,24 +71,32 @@ export default (
     </A>
 
     <B>
-      <Columns amount="2">
+      <Columns amount="2" gap="3.5em">
         <div>
           <FitImage src="media/sam_wray.jpg" alt=""></FitImage>
         </div>
         <div>
           <StyledList>
             <Fragment order={2}>
-              <li>
+              <li class="space-bottom">
+                <span class="emoji">
+                  <LivejsLogo height="7vh" colorText="#000"></LivejsLogo>
+                </span>
                 Music with Game Boys as 2xAA and visuals with{' '}
                 <ImportantLink href="https://modv.js.org">modV</ImportantLink>{' '}
                 as NOSIGNAL
               </li>
             </Fragment>
             <Fragment order={3}>
-              <li>μCollective</li>
+              <li class="space-bottom">
+                <span class="emoji">💵</span>Experience Technologist at
+                publicis•poke
+              </li>
             </Fragment>
             <Fragment order={4}>
-              <li>Hardware hacking</li>
+              <li class="no-border space-bottom">
+                <span class="emoji">❤️</span>μCollective, Hardware hacking
+              </li>
             </Fragment>
           </StyledList>
         </div>
