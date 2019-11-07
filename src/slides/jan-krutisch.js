@@ -43,6 +43,7 @@ const {Slide, A, B} = HalfVerticalTopSmallBottomBig
 
 const notes = (
   <Notes>
+    <div class="who-tim">Tim</div>
     <h3>Jan Krutisch</h3>
     <ul>
       <li>At LiveJS he does music as halfbyte using his own improjam.</li>

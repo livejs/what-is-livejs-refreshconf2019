@@ -1,12 +1,12 @@
 import Config from './config'
 import React from 'react'
 import uuid from 'uuid/v4'
-import Fragment, { Sequence } from '@dekk/fragment'
-import { Text, Title, Subtitle, Uppercase, Bold, Center, Code } from '@dekk/text'
-import { default as MaskedImage, FitImage } from '@dekk/image'
+import Fragment, {Sequence} from '@dekk/fragment'
+import {Text, Title, Subtitle, Uppercase, Bold, Center, Code} from '@dekk/text'
+import {default as MaskedImage, FitImage} from '@dekk/image'
 import Notes from '@dekk/speaker-notes'
-import { Main } from '@dekk/master-slides'
-import { Plugins } from '@dekk/deck'
+import {Main} from '@dekk/master-slides'
+import {Plugins} from '@dekk/deck'
 import {
   RainbowText,
   TextMarker,
@@ -15,28 +15,31 @@ import {
   SuperVideo,
   StyledFooter
 } from '../components'
-import { css } from 'styled-components'
-import { Grid, Half, HalfVertical } from '../masters'
-import { ImportantLink } from '../components/links'
+import {css} from 'styled-components'
+import {Grid, Half, HalfVertical} from '../masters'
+import {ImportantLink} from '../components/links'
 import {
   topCenter,
   LargeImage,
   MediumImage,
   SmallImage
 } from '../components/images'
-import { fade, flip, cube } from '@dekk/animation'
+import {fade, flip, cube} from '@dekk/animation'
 import {
   StyledListLarge,
   StyledList,
   StyledOrderedListLarge
 } from '../components/list'
 
-const { Slide, A } = Main
+const {Slide, A} = Main
 // const {Slide, A, B} = Half
 
 const notes = (
   <Notes>
-    <p />
+    <div class="who-jan">Jan</div>
+    <ul>
+      <li></li>
+    </ul>
   </Notes>
 )
 

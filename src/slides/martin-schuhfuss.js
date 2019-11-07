@@ -43,6 +43,7 @@ const {Slide, A, B} = HalfVerticalTopSmallBottomBig
 
 const notes = (
   <Notes>
+    <div class="who-jan">Jan</div>
     <h3>Martin Schuhfuss</h3>
     <ul>
       <li>

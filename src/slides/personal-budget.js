@@ -1,12 +1,12 @@
 import Config from './config'
 import React from 'react'
 import uuid from 'uuid/v4'
-import Fragment, { Sequence } from '@dekk/fragment'
-import { Text, Title, Subtitle, Uppercase, Bold, Center, Code } from '@dekk/text'
-import { default as MaskedImage, FitImage } from '@dekk/image'
+import Fragment, {Sequence} from '@dekk/fragment'
+import {Text, Title, Subtitle, Uppercase, Bold, Center, Code} from '@dekk/text'
+import {default as MaskedImage, FitImage} from '@dekk/image'
 import Notes from '@dekk/speaker-notes'
-import { Main } from '@dekk/master-slides'
-import { Plugins } from '@dekk/deck'
+import {Main} from '@dekk/master-slides'
+import {Plugins} from '@dekk/deck'
 import {
   RainbowText,
   TextMarker,
@@ -15,32 +15,39 @@ import {
   SuperVideo,
   StyledFooter
 } from '../components'
-import { css } from 'styled-components'
-import { Grid, Half, HalfVertical } from '../masters'
-import { ImportantLink } from '../components/links'
+import {css} from 'styled-components'
+import {Grid, Half, HalfVertical} from '../masters'
+import {ImportantLink} from '../components/links'
 import {
   topCenter,
   LargeImage,
   MediumImage,
   SmallImage
 } from '../components/images'
-import { fade, flip, cube } from '@dekk/animation'
+import {fade, flip, cube} from '@dekk/animation'
 import {
   StyledListLarge,
   StyledList,
   StyledOrderedListLarge
 } from '../components/list'
 
-const { Slide, A } = Main
+const {Slide, A} = Main
 // const {Slide, A, B} = Half
 
 const notes = (
   <Notes>
-    If we want to break this down per person<p />
-    Not super exact, some members like me haven't been in the whole time<p/>
-    The 2,3t are derived from the "safe" budget for staying below 2°C, 750 Billon t (until 2050)
-    divided by an approximate 8,2 Billion people.<p/>
-    (Yes, that's very simplistic)
+    <div class="who-jan">Jan</div>
+    <ul>
+      <li>If we want to break this down per person</li>
+      <li>
+        Not super exact, some members like me haven't been in the whole time
+      </li>
+      <li>
+        The 2,3t are derived from the "safe" budget for staying below 2°C, 750
+        Billon t (until 2050) divided by an approximate 8,2 Billion people.
+      </li>
+      <li>(Yes, that's very simplistic)</li>
+    </ul>
   </Notes>
 )
 
@@ -70,9 +77,7 @@ export default (
     {notes}
 
     <A>
-      <Title>
-        {'~ 16t / Member'}
-      </Title>
+      <Title>{'~ 16t / Member'}</Title>
       <Fragment order={1}>
         <Subtitle>~4t / Year / Member</Subtitle>
       </Fragment>

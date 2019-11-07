@@ -37,6 +37,7 @@ const {Slide, A, B} = Half
 
 const notes = (
   <Notes>
+    <div class="who-jan">Jan</div>
     <h3>LiveJS Manifesto</h3>
     <ol>
       <li>

@@ -38,6 +38,7 @@ const {Slide, A, B} = HalfVertical
 
 const notes = (
   <Notes>
+    <div class="who-tim">Tim</div>
     <h3>Name explained</h3>
     <ul>
       <li>We peform Live, no playback</li>

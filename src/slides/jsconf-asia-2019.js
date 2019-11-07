@@ -36,6 +36,7 @@ const {Slide, A} = Main
 
 const notes = (
   <Notes>
+    <div class="who-tim">Tim</div>
     <h3>JSConf Asia 2019</h3>
     <ul>
       <li>

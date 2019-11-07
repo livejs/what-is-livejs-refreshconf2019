@@ -36,7 +36,14 @@ const {Slide, A} = Main
 
 const notes = (
   <Notes>
-    <p />
+    <div class="who-jan">Jan</div>
+    <ul>
+      <li>
+        This is how a show for JSConf Budapest 2019 looked like, 3 people from
+        LiveJS, no one dancing
+      </li>
+      <li>Raise your hand: Do you like to party after a full day of talks?</li>
+    </ul>
   </Notes>
 )
 

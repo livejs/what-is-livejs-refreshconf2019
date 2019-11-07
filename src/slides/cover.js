@@ -18,8 +18,12 @@ const {Slide, A} = Main
 
 const notes = (
   <Notes>
-    <h3>Jan</h3>
-    <p />
+    <div class="who-jan">Jan</div>
+    <ul>
+      <li>
+        Do you want to know what LiveJS really is? Well then let's get started!
+      </li>
+    </ul>
   </Notes>
 )
 

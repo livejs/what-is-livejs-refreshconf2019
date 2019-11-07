@@ -38,6 +38,7 @@ const {Slide, A, B} = HalfVertical
 
 const notes = (
   <Notes>
+    <div class="who-jan">Jan</div>
     <h3>History of LiveJS</h3>
     <ul>
       <li>

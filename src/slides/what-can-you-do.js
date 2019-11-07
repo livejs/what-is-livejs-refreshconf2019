@@ -36,7 +36,7 @@ const {Slide, A} = Main
 
 const notes = (
   <Notes>
-    <p />
+    <div class="who-jan">Jan</div>
   </Notes>
 )
 

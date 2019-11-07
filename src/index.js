@@ -54,6 +54,7 @@ const mySlides = [
 
   // tim
   'tims-stack',
+  // TODO: Add cyberpunk goggles image to diagram
   'tims-stack-diagram',
 
   'livejs-around-the-world',
@@ -80,6 +81,7 @@ const mySlides = [
 
   // jan
   'what-is-jan-doing',
+  // TODO: Add logo
   'extinction-rebellion',
 
   // tim
@@ -122,6 +124,20 @@ const baseStyles = css`
 
   background: var(--theme-background);
 
+  .who-tim,
+  .who-jan {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 3em;
+    background: #f00;
+    color: #fff;
+    padding: 0 0.15em;
+  }
+  .who-jan {
+    background: #00f;
+  }
+
   h1,
   h2,
   h3 {
@@ -135,6 +151,10 @@ const baseStyles = css`
   h1,
   h2 {
     width: 100%;
+  }
+
+  h3 {
+    margin: 0;
   }
 
   .center {

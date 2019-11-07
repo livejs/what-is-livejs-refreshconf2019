@@ -37,6 +37,7 @@ const {Slide, A, B} = HalfLeftSmallRightBig
 
 const notes = (
   <Notes>
+    <div class="who-tim">Tim</div>
     <h3>We as LiveJS?</h3>
     <ul>
       <li>
