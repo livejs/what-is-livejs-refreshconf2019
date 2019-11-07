@@ -38,6 +38,9 @@ const mySlides = [
 
   'jans-stack',
   'improjam',
+  'improjam-midi-explainer',
+  'push-display',
+  'push-display-magick',
   'improjam-2',
   'teapot',
   'teapot-2',

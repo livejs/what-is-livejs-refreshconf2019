@@ -36,7 +36,9 @@ const { Slide, A } = Main
 
 const notes = (
   <Notes>
-    <p />
+    Back of the napkin calculation<p/>
+    Flight data from atmosfair, a CO2 compensation org<p/>
+    Link to spreadsheet? <p />
   </Notes>
 )
 
@@ -58,7 +60,7 @@ const notes = (
         animationIn={flip.y}
 */
 export default (
-  <Slide key={uuid()}>
+  <Slide key={uuid()} background={`url("media/airplane.jpg") center`}>
     {/*
         luminave={['green']}
       */}

@@ -36,7 +36,11 @@ const { Slide, A } = Main
 
 const notes = (
   <Notes>
-    <p />
+    If we want to break this down per person<p />
+    Not super exact, some members like me haven't been in the whole time<p/>
+    The 2,3t are derived from the "safe" budget for staying below 2°C, 750 Billon t (until 2050)
+    divided by an approximate 8,2 Billion people.<p/>
+    (Yes, that's very simplistic)
   </Notes>
 )
 

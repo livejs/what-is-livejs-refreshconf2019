@@ -36,7 +36,10 @@ const { Slide, A } = Main
 
 const notes = (
   <Notes>
-    Web MIDI<p />
+    That's why I need electron, I can directly require any node module<p/>
+    usb module wraps libusb<p/>
+    techically, Push 2 provides a composite device<p/>
+    MIDI and generic bulk data interface<p/>
   </Notes>
 )
 
@@ -58,29 +61,22 @@ const notes = (
         animationIn={flip.y}
 */
 export default (
-  <Slide key={uuid()} background={`url("media/push-2.jpg") center`} backgroundPosition='center'>
-    {/*
-        luminave={['green']}
-      */}
-    <Plugins.Data luminave={['']} />
+  <Slide key={uuid()}>
     {notes}
 
     <A>
-      <Title>improjam</Title>
+      <Title>Push 2 display</Title>
       <Fragment order={1}>
-        <Subtitle>Web MIDI sequencer</Subtitle>
+        <Subtitle>"usb" npm module</Subtitle>
       </Fragment>
-
       <Fragment order={2}>
-        <Subtitle>Ableton Push as UI</Subtitle>
+        <Subtitle>libusb</Subtitle>
       </Fragment>
-
       <Fragment order={3}>
-        <Subtitle>Based on Electron</Subtitle>
+        <Subtitle>composite device</Subtitle>
       </Fragment>
-
       <Fragment order={4}>
-        <Subtitle>(because of the Push display)</Subtitle>
+        <Subtitle>generic bulk data interface</Subtitle>
       </Fragment>
 
       {/*
