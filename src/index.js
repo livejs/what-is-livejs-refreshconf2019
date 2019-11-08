@@ -76,7 +76,7 @@ const mySlides = [
   'we-as-livejs',
 
   // jan
-  'what-is-jan-doing'
+  'what-is-jan-doing',
   'extinction-rebellion',
 
   // tim
