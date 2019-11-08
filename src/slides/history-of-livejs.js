@@ -60,8 +60,8 @@ const notes = (
         of the intro performance, the other half was nested loops.
       </li>
       <li>
-        <b>2019</b>: LiveJS does the opening for JSConf EU and performances in
-        the breaks with guest artists.
+        <b>2019</b>: First ever workshop by Sam and Tim to explain how to use
+        modV and luminave to create a live show
       </li>
     </ul>
   </Notes>
