@@ -93,7 +93,7 @@ export default (
               <Fragment order={1}>
                 <li>LiveJS was founded by Ruth & Tim @ ScotlandJS</li>
               </Fragment>
-              <Fragment order={3}>
+              <Fragment order={1}>
                 <li class="no-border">Martin, Matt & Sam join</li>
               </Fragment>
             </StyledList>
@@ -130,7 +130,7 @@ export default (
             <StyledList>
               <Fragment order={8}>
                 <li class="no-border">
-                  LiveJS does the opening show for JSConf EU
+                  Sam & Tim do the first visual & light workshop
                 </li>
               </Fragment>
             </StyledList>

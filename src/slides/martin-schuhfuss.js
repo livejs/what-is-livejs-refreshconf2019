@@ -48,12 +48,10 @@ const notes = (
     <ul>
       <li>
         At LiveJS he does lights as usefulthink using his own software
-        fivetwelve. Martin also created an app that lets you control lights
-        using CSS.
+        fivetwelve. Controls lights with CSS.
       </li>
       <li>Creative Developer at Ubilabs</li>
-      <li>Creates LED art</li>
-      <li>Recreates everything that comes into his mind using hardware.</li>
+      <li>MIDI, WebGL, LEDs, Electronics, 3D design and printing</li>
     </ul>
   </Notes>
 )

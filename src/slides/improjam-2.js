@@ -66,12 +66,10 @@ export default (
 
     <A>
       <Title>improjam</Title>
-      <Fragment order={1}>
-        <MaskedImage
-          src="media/improjam-midi-flow.svg"
-          alt="a flow diagram of MIDI data from improjam"
-        />
-      </Fragment>
+      <LargeImage
+        src="media/improjam-midi-flow.svg"
+        alt="a flow diagram of MIDI data from improjam"
+      />
 
       {/*
       <ImportantLink href=""></ImportantLink>
