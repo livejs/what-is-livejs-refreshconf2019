@@ -78,7 +78,7 @@ export default (
         </div>
         <div>
           <StyledList>
-            <Fragment order={2}>
+            <Fragment order={0}>
               <li class="space-bottom">
                 <span class="emoji">
                   <LivejsLogo height="7vh" colorText="#000"></LivejsLogo>
@@ -88,13 +88,13 @@ export default (
                 as NOSIGNAL
               </li>
             </Fragment>
-            <Fragment order={3}>
+            <Fragment order={0}>
               <li class="space-bottom">
                 <span class="emoji">💵</span>Experience Technologist at
                 publicis•poke
               </li>
             </Fragment>
-            <Fragment order={4}>
+            <Fragment order={0}>
               <li class="no-border space-bottom">
                 <span class="emoji">❤️</span>μCollective, Hardware hacking
               </li>

@@ -48,9 +48,8 @@ const notes = (
     <ul>
       <li>
         At LiveJS he does lights as usefulthink using his own software
-        fivetwelve. This is also the base package that Tim is using to control
-        lights over DMX512. Martin also created an app that lets you control
-        lights using CSS.
+        fivetwelve. Martin also created an app that lets you control lights
+        using CSS.
       </li>
       <li>Creative Developer at Ubilabs</li>
       <li>Creates LED art</li>
@@ -78,7 +77,7 @@ export default (
         </div>
         <div>
           <StyledList>
-            <Fragment order={2}>
+            <Fragment order={0}>
               <li class="space-bottom">
                 <span class="emoji">
                   <LivejsLogo height="7vh" colorText="#000"></LivejsLogo>
@@ -87,18 +86,19 @@ export default (
                 <ImportantLink href="https://github.com/beyondscreen/fivetwelve">
                   fivetwelve
                 </ImportantLink>{' '}
-                by using CSS as usefulthink
+                and controlled via CSS
               </li>
             </Fragment>
-            <Fragment order={3}>
+            <Fragment order={0}>
               <li class="space-bottom">
                 <span class="emoji">💵</span>
                 Creative Developer at Ubilabs
               </li>
             </Fragment>
-            <Fragment order={4}>
+            <Fragment order={0}>
               <li class="space-bottom no-border">
-                <span class="emoji">❤️</span>LED art, Hardware hacking
+                <span class="emoji">❤️</span>MIDI, WebGL, LEDs, Electronics, 3D
+                design and printing
               </li>
             </Fragment>
           </StyledList>

@@ -45,6 +45,7 @@ const notes = (
         We = a collective of digital artists that consists of 6 core members
       </li>
       <li>We are developers</li>
+      <li>Let's take a look at each of us individually</li>
     </ul>
   </Notes>
 )

@@ -83,7 +83,7 @@ export default (
         </div>
         <div>
           <StyledList>
-            <Fragment order={2}>
+            <Fragment order={0}>
               <li class="space-bottom">
                 <span class="emoji">
                   <LivejsLogo height="7vh" colorText="#000"></LivejsLogo>
@@ -97,13 +97,13 @@ export default (
                 as NERDDISCO
               </li>
             </Fragment>
-            <Fragment order={3}>
+            <Fragment order={0}>
               <li class="space-bottom">
                 <span class="emoji">💵</span>
                 Co-Founder & CTO at Synoa
               </li>
             </Fragment>
-            <Fragment order={4}>
+            <Fragment order={0}>
               <li class="space-bottom no-border">
                 <span class="emoji">❤️</span>
                 LED Art,

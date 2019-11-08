@@ -38,7 +38,7 @@ const mySlides = [
   // tim
   'what-is-a-live-show',
   // TODO: What is the connection between the two slides? How can we make the transition?
-  'how-to-run-a-show-in-3-phases',
+  // 'how-to-run-a-show-in-3-phases',
 
   'refreshconf-show-explained',
 
@@ -60,13 +60,12 @@ const mySlides = [
   'livejs-around-the-world',
   'shows-around-the-world',
   'jsconfeu-opening-2019',
+  // TODO: Maybe also remove this to have more time
   'jsconf-asia-2019',
 
   // jan
   'this-is-really-cool-but',
   'co2-wasted-by-livejs-since-the-beginning',
-
-  // TODO: a chart where everyone is living -> Airport -> CO2
 
   'tons-of-co2',
   'personal-budget',
@@ -89,10 +88,10 @@ const mySlides = [
   'thorium-spaceship-simulator',
 
   // together?
-  'what-can-you-do',
+  // 'what-can-you-do',
 
   // jan
-  'art-is-giving-back-positive-energy-into-the-community',
+  // 'art-is-giving-back-positive-energy-into-the-community',
 
   // tim
   'everything-is-connected',
