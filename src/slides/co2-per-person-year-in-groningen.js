@@ -69,7 +69,9 @@ export default (
     {notes}
 
     <A>
-      <Title>CO2 per person &#x2F; year in Groningen</Title>
+      <Title>
+        CO<sub>2</sub> per person &#x2F; year in Groningen
+      </Title>
 
       {/*
       <ImportantLink href=""></ImportantLink>

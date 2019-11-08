@@ -75,7 +75,7 @@ export default (
       <Columns amount="2" className="outer-gap">
         <div>
           <Fragment order={1}>
-            <ColumnCaption className="right">
+            <ColumnCaption className="right normal">
               <Subtitle>live</Subtitle>
               We perform live, no playback
             </ColumnCaption>
@@ -83,7 +83,7 @@ export default (
         </div>
         <div>
           <Fragment order={2}>
-            <ColumnCaption>
+            <ColumnCaption className="normal">
               <Subtitle>js</Subtitle>We use JavaScript & the web
             </ColumnCaption>
           </Fragment>

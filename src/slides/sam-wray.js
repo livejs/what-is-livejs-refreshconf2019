@@ -83,7 +83,7 @@ export default (
                 <span class="emoji">
                   <LivejsLogo height="7vh" colorText="#000"></LivejsLogo>
                 </span>
-                Music with Game Boys as 2xAA and visuals with{' '}
+                Visuals with{' '}
                 <ImportantLink href="https://modv.js.org">modV</ImportantLink>{' '}
                 as NOSIGNAL
               </li>
@@ -96,7 +96,8 @@ export default (
             </Fragment>
             <Fragment order={0}>
               <li class="no-border space-bottom">
-                <span class="emoji">❤️</span>μCollective, Hardware hacking
+                <span class="emoji">❤️</span>Music with Game Boys as 2xAA,
+                μCollective
               </li>
             </Fragment>
           </StyledList>

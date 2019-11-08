@@ -37,6 +37,11 @@ export const ColumnCaption = styled.div`
     left: initial;
   }
 
+  &.normal {
+    font-weight: normal;
+    text-transform: none;
+  }
+
   &.small {
     font-weight: normal;
     text-transform: none;
