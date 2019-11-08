@@ -45,12 +45,8 @@ const mySlides = [
   // jan
   'jans-stack',
   'improjam',
-  'improjam-midi-explainer',
-  'push-display',
-  'push-display-magick',
   'improjam-2',
   'teapot',
-  'teapot-2',
 
   // tim
   'tims-stack',
@@ -69,7 +65,8 @@ const mySlides = [
 
   'tons-of-co2',
   'personal-budget',
-  'co2-per-person-year-in-groningen',
+  // TODO: Überlegen ob man das als vergleich machen kann, ist aber egal, glaube ich.
+  //'co2-per-person-year-in-groningen',
 
   // show me your hands!
   'play-in-empty-rooms',
@@ -79,8 +76,7 @@ const mySlides = [
   'we-as-livejs',
 
   // jan
-  'what-is-jan-doing',
-  // TODO: Add logo
+  'what-is-jan-doing'
   'extinction-rebellion',
 
   // tim

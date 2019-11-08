@@ -68,6 +68,7 @@ export default (
 
     <A>
       <Title>Push 2 display</Title>
+      <LargeImage src="media/canvas_to_lcd.jpg" />
       <Subtitle>TODO: Canvas 2 Display</Subtitle>
       {/*
       <ImportantLink href=""></ImportantLink>

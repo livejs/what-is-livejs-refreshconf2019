@@ -38,7 +38,7 @@ const notes = (
   <Notes>
     <div class="who-jan">Jan</div>
     <ul>
-      <li>Web MIDI</li>
+      <li>MIDI, awesome ancient protocol available in some browsers</li>
     </ul>
   </Notes>
 )
@@ -75,18 +75,6 @@ export default (
       <Title>improjam</Title>
       <Fragment order={1}>
         <Subtitle>Web MIDI sequencer</Subtitle>
-      </Fragment>
-
-      <Fragment order={2}>
-        <Subtitle>Ableton Push as UI</Subtitle>
-      </Fragment>
-
-      <Fragment order={3}>
-        <Subtitle>Based on Electron</Subtitle>
-      </Fragment>
-
-      <Fragment order={4}>
-        <Subtitle>(because of the Push display)</Subtitle>
       </Fragment>
 
       {/*

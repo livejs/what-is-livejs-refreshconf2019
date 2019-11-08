@@ -38,7 +38,9 @@ const notes = (
   <Notes>
     <div class="who-jan">Jan</div>
     <ul>
-      <li></li>
+      <li>Essentially a synthesizer in your web browser</li>
+      <li>Web MIDI to receive</li>
+      <li>Web Audio to generate Sound</li>
     </ul>
   </Notes>
 )
@@ -71,18 +73,6 @@ export default (
     <A>
       <Title>"teapot"</Title>
       <Fragment order={1}>
-        <Subtitle>aka DOMinator</Subtitle>
-      </Fragment>
-
-      <Fragment order={2}>
-        <Subtitle>aka Bassline 418</Subtitle>
-      </Fragment>
-
-      <Fragment order={3}>
-        <Subtitle>aka SL 1201</Subtitle>
-      </Fragment>
-
-      <Fragment order={4}>
         <Subtitle>MIDI driven Web Audio Synthesizer</Subtitle>
       </Fragment>
 
