@@ -1,9 +1,12 @@
 <h1>What is {live:js}?</h1>
 
+![Custom visual for RefreshConf 2019 in modV](docs/media/livejs_refreshconf_2019_custom_visual_in_modv.jpg)
+
 Our show for [RefreshConf](https://www.refreshconference.nl/) 2019 in Groningen was split into two parts:
 
 - 20 mins [performance](#performance) to end lunch and get people back to the stage
 - 30 mins [talk](#talk) to explain what LiveJS is and which influence it has on the environment
+
 
 ---
 
@@ -22,6 +25,9 @@ Our show for [RefreshConf](https://www.refreshconference.nl/) 2019 in Groningen 
 
 ## Performance
 
+During the performance the atteendes had the change to look behind the scens and come up on stage to talk with us.
+
+
 ### Jan (Music)
 
 ![Jans Music Stack explained](docs/media/improjam-midi-flow.svg)
@@ -36,6 +42,10 @@ Our show for [RefreshConf](https://www.refreshconference.nl/) 2019 in Groningen 
 * [luminave](https://github.com/NERDDISCO/luminave) (Light / DMX512 / LEDs)
 * [modV](https://modv.js.org) (Visuals)
 * [WebUSB DMX512 Controller](https://medium.com/@timpietrusky/how-to-build-a-webusb-dmx512-controller-by-using-an-arduino-e0dd8efb7bf0)
+
+![LiveJS performs for RefreshConf 2019](docs/media/livejs_refreshconf_2019_performance.jpg)
+
+Source: Aljan Scholtens
 
 ---
 
@@ -97,6 +107,11 @@ You can access the [slides](https://livejs.github.io/what-is-livejs-refreshconf2
   * [Christa McAuliffe Space Center, Utah, USA](https://www.facebook.com/asdspacecenter/)
 
 
+![LiveJS talks about LiveJS at RefreshConf 2019](docs/media/livejs_refreshconf_2019_talk.jpg)
+
+Source: Aljan Scholtens
+
+
 ### Sketch
 
 The talented [Anke](https://twitter.com/ankedesign) created a super nice sketch, thank you super much:
@@ -110,6 +125,10 @@ The talented [Anke](https://twitter.com/ankedesign) created a super nice sketch,
 ## Location
 
 Der Aa-Kerk, Groningen, Netherlands
+
+![Der Aa-Kerk with Lights from LiveJS](docs/media/livejs_refreshconf_2019_der-aa-kerk.jpg)
+
+Source: Tim Pietrusky
 
 ---
 
