@@ -115,7 +115,10 @@ Der Aa-Kerk, Groningen, Netherlands
 
 ## Thanks
 
-We would like to thank [RefreshConf](https://www.refreshconference.nl/) and especially thank you to [Joël Kuijten](https://twitter.com/PM5544) for asking over and over until we said yes. And an even bigger thank you for letting us speak about what ever we wanted. 
+We would like to thank [RefreshConf](https://www.refreshconference.nl/) and especially thank you to [Joël Kuijten](https://twitter.com/PM5544) 
+for asking over and over until we said yes. And an even bigger thank you for letting us speak about what ever we wanted. 
+Because of this freedom, we had the courage to talk about the impact of our travels at the environment. This was the first time ever that we as LiveJS
+did not only talk about the technolgy behind everything, but also on a topic that bothers us personally very much.
 
 ---
 
